@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Algo revision</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<link rel="stylesheet" href="autrestyle1.css">
+<link rel="stylesheet" href="autrestyle.css">
+<link rel="stylesheet" href="autrestyle2.css">
+
+<style type="text/css" src="renderingpdf.css"></style>
+
+<!-- Load mathjax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
+<script src="mathjaxconfig.js"> </script>
+<script src="mermaidconfig.js"> </script>
+<!-- <script type="module">
+  
+</script> -->
+<!-- End of mermaid configuration --></head>
+<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <h1><a href="index.html">Nsi</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <!-- <a href="index.html"><img src="assets/img/lycee/BandeauENT Laura Compa.jpg" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <!-- <h1><a href="index.html">Nsi</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html"><img src="assets/img/lycee/BandeauENT Laura Compa.jpg" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./index.html">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">A propos</a></li>
+          <li><a class="nav-link scrollto" href="#exos">Exercices</a></li>
+          <li><a class="nav-link scrollto" href="#prepaterm">Préparer la terminale</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+</section>
+<section id="about" class="about">
+  <div class="container">
+  <main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=af1e6593-0ae9-4f06-ad71-1d550931e05c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Recap algo</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d9e0cdd8-ac74-4f75-8a51-6096c8f29773">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Tri-par-insertion">Tri par insertion<a class="anchor-link" href="#Tri-par-insertion">¶</a></h1><h2 id="l'Algorithme">l'Algorithme<a class="anchor-link" href="#l'Algorithme">¶</a></h2><p>VARIABLE<br/>
+t : tableau d'entiers<br/>
+i : nombre entier<br/>
+j : nombre entier<br/>
+k : nombre entier</p>
+<p>DEBUT<br/>
+j=2<br/>
+tant que j&lt;=longueur(t):   //boucle 1<br/>
+i=j-1<br/>
+k=t[j]</p>
+<pre><code>tant que i&gt;0 et que t[i]&gt;k:   //boucle 2  
+    t[i+1]=t[i]  
+    i=i-1  
+fin tant que  
+
+t[i+1]=k  
+j=j+1  </code></pre>
+<p>fin tant que</p>
+<p>FIN</p>
+<h2 id="Le-python">Le python<a class="anchor-link" href="#Le-python">¶</a></h2><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tri_insertion</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="c1"># Stocker la valeur courante pour insertion ultérieure</span>
+        <span class="n">cle</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="c1"># Déplacer les éléments de la liste triée vers la droite</span>
+        <span class="c1"># jusqu'à ce qu'une position appropriée pour la valeur_courante soit trouvée</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cle</span> <span class="o">&lt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+            <span class="nb">list</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+
+        <span class="c1"># Insérer la valeur_courante à sa position correcte</span>
+        <span class="nb">list</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">cle</span>
+
+<span class="c1"># Exemple d'utilisation avec le  liste (merci gabrielle) t</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" liste (merci gabrielle) non trié :"</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="n">tri_insertion</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">" liste (merci gabrielle) trié :"</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3d19a889-26ef-48ef-ba4d-da10381622f9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Les-exercices">Les exercices<a class="anchor-link" href="#Les-exercices">¶</a></h2><p>Exercice 1
+1. Adapter le tri par insertion vu en cours pour trier le tableau de tuples suivants en fonction du second élément des tuples:</p>
+<div class="highlight"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"e"</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">),</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s2">"f"</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)]</span>
+</pre></div>
+<p>Exercice 7</p>
+<ol>
+<li>Construire par compréhension un tableau de cent éléments aléatoires compris entre 0 et 10.</li>
+<li>En s’aidant du tri par insertion, écrire la fonction <strong>max_occurrences(tab: list) → int</strong> qui renvoie l’élément le plus présent dans le tableau. Indication: dans un tableau trié les éléments identiques se suivent.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12fe2538-fd68-404d-a2d1-37c6f07e9279">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="tri-par-selection">tri par selection<a class="anchor-link" href="#tri-par-selection">¶</a></h1><h2 id="l'Algorithme">l'Algorithme<a class="anchor-link" href="#l'Algorithme">¶</a></h2><p>VARIABLE<br/>
+t : tableau d'entiers<br/>
+i : nombre entier<br/>
+min : nombre entier<br/>
+j : nombre entier</p>
+<p>DEBUT<br/>
+i=1<br/>
+tant que i&lt;longueur(t):   //boucle 1<br/>
+j=i+1<br/>
+min=i</p>
+<pre><code>tant que j&lt;=longueur(t):   //boucle 2  
+    si t[j]&lt;t[min]:  
+        min=j  
+    fin si  
+    j=j+1  
+fin tant que  
+
+si min≠i :  
+    échanger t[i] et t[min]  
+fin si  
+i=i+1  </code></pre>
+<p>fin tant que</p>
+<p>FIN</p>
+<h2 id="L'impl%C3%A9mentation-python">L'implémentation python<a class="anchor-link" href="#L'impl%C3%A9mentation-python">¶</a></h2><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="c1"># Trouver l'indice du minimum non trié</span>
+        <span class="n">indice_min</span> <span class="o">=</span> <span class="n">i</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]:</span>
+                <span class="n">indice_min</span> <span class="o">=</span> <span class="n">j</span>
+
+        <span class="c1"># Échanger l'élément minimum avec le premier élément non trié</span>
+        <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+
+<span class="c1"># Exemple d'utilisation avec le tableau t</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tableau non trié :"</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+
+<span class="n">tri_selection</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tableau trié :"</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4fd48205-8813-4d83-81dd-b9d568d9147c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Exercices-epreuve-pratiques">Exercices epreuve pratiques<a class="anchor-link" href="#Exercices-epreuve-pratiques">¶</a></h1><p>sujets <a href="https://pixees.fr/informatiquelycee/term/index.html#ep_prat" target="_blank"> ici</a></p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Sujet 2024</th>
+<th>Exercice n°</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tri</td>
+<td>25/30</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tri</td>
+<td>37</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tri insertion</td>
+<td>7/12</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Tri selection</td>
+<td>12</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=19660a27-c31b-4444-8641-3195c9ef234b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Recherche-du-max-et-min-dans-une-liste">Recherche du max et min dans une liste<a class="anchor-link" href="#Recherche-du-max-et-min-dans-une-liste">¶</a></h1><h2 id="l'Algorithme">l'Algorithme<a class="anchor-link" href="#l'Algorithme">¶</a></h2><p>VARIABLE<br/>
+L=[1,3,5,-4,7]<br/>
+DEBUT<br/>
+min &lt;- le premier element de la liste L<br/>
+max &lt;- le premier element de la liste L</p>
+<pre><code>Pour chaque élément de la liste faire  
+    si élement est inférieur à min  
+        min &lt;- element  
+    si élément est supérieur à max  
+        max &lt;- element  
+afficher min max  </code></pre>
+<p>FIN</p>
+<h2 id="L'impl%C3%A9mentation-python">L'implémentation python<a class="anchor-link" href="#L'impl%C3%A9mentation-python">¶</a></h2><div class="highlight"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<span class="nb">min</span><span class="o">=</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">max</span><span class="o">=</span><span class="n">L</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">L</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">elt</span><span class="o">&lt;</span><span class="nb">min</span><span class="p">:</span>
+        <span class="nb">min</span><span class="o">=</span><span class="n">elt</span>
+    <span class="k">elif</span> <span class="n">elt</span><span class="o">&gt;</span><span class="nb">max</span><span class="p">:</span>
+        <span class="nb">max</span><span class="o">=</span><span class="n">elt</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Le min est </span><span class="si">{}</span><span class="s2"> et le max est </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span><span class="nb">max</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Le min est $</span><span class="si">{</span><span class="nb">min</span><span class="si">}</span><span class="s2"> et le max est $</span><span class="si">{</span><span class="nb">max</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2f61665b-402b-46e9-8698-3653d5acafc7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Exercices-epreuve-pratiques">Exercices epreuve pratiques<a class="anchor-link" href="#Exercices-epreuve-pratiques">¶</a></h1><p>sujets <a href="https://pixees.fr/informatiquelycee/term/index.html#ep_prat" target="_blank"> ici</a></p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Sujet 2024</th>
+<th>Exercice n°</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recherche min /max</td>
+<td>14/26/35</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Recherche max</td>
+<td>28</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Recherche max</td>
+<td>5/38</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Recherche element</td>
+<td>2/4/6/13/17/20/34/43/39</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=12ff61f2-e1e0-4081-997d-9fe01026b117">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Recherche-dichotomique">Recherche dichotomique<a class="anchor-link" href="#Recherche-dichotomique">¶</a></h1><p>VARIABLE<br/>
+t : tableau d'entiers trié<br/>
+x : entier (valeur à chercher)<br/>
+début : entier<br/>
+fin : entier<br/>
+milieu : entier<br/>
+trouvé : booléen</p>
+<p>DEBUT<br/>
+début = 0<br/>
+fin = longueur(t) - 1<br/>
+trouvé = faux</p>
+<p>tant que début &lt;= fin et non trouvé:   // boucle<br/>
+milieu = (début + fin) / 2</p>
+<pre><code>si t[milieu] = x:  
+    trouvé = vrai  
+sinon si t[milieu] &lt; x:  
+    début = milieu + 1  
+sinon:  
+    fin = milieu - 1  
+fin si  </code></pre>
+<p>fin tant que</p>
+<p>si trouvé:<br/>
+afficher "Élément trouvé à l'index", milieu<br/>
+sinon:<br/>
+afficher "Élément non trouvé"<br/>
+fin si</p>
+<p>FIN</p>
+<h2 id="L'impl%C3%A9mentation-python">L'implémentation python<a class="anchor-link" href="#L'impl%C3%A9mentation-python">¶</a></h2><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">recherche_dichotomique</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="n">debut</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">fin</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="n">trouve</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">while</span> <span class="n">debut</span> <span class="o">&lt;=</span> <span class="n">fin</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">trouve</span><span class="p">:</span>
+        <span class="n">milieu</span> <span class="o">=</span> <span class="p">(</span><span class="n">debut</span> <span class="o">+</span> <span class="n">fin</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+        
+        <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+            <span class="n">trouve</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">t</span><span class="p">[</span><span class="n">milieu</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
+            <span class="n">debut</span> <span class="o">=</span> <span class="n">milieu</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">fin</span> <span class="o">=</span> <span class="n">milieu</span> <span class="o">-</span> <span class="mi">1</span>
+    
+    <span class="k">if</span> <span class="n">trouve</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Élément trouvé à l'index </span><span class="si">{</span><span class="n">milieu</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Élément non trouvé"</span><span class="p">)</span>
+
+<span class="c1"># Exemple d'utilisation</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">recherche_dichotomique</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=67b76f65-372e-49d6-a373-e4a475ffe624">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Exercices-epreuve-pratiques">Exercices epreuve pratiques<a class="anchor-link" href="#Exercices-epreuve-pratiques">¶</a></h1><p>sujets <a href="https://pixees.fr/informatiquelycee/term/index.html#ep_prat" target="_blank"> ici</a></p>
+<table>
+<thead>
+<tr>
+<th>Theme</th>
+<th>Sujet 2024</th>
+<th>Exercice n°</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recherche dichotomique</td>
+<td>12/25/31/42</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1d4d5ad9-acc8-4953-834b-65e876d70033">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="K-plus-proches-voisins">K plus proches voisins<a class="anchor-link" href="#K-plus-proches-voisins">¶</a></h1><p>VARIABLE
+t : tableau de points (chaque point ayant des coordonnées dans un espace à d dimensions)<br/>
+p : point (le point pour lequel on cherche les k plus proches voisins)<br/>
+k : entier (le nombre de voisins à trouver)<br/>
+distances : tableau de paires (distance, point)<br/>
+i : entier<br/>
+j : entier</p>
+<p>DEBUT<br/>
+distances = tableau vide</p>
+<p>// Calculer la distance de chaque point du tableau à p<br/>
+pour i de 1 à longueur(t):</p>
+<pre><code>distance = distance_entre(p, t[i])  
+ajouter (distance, t[i]) à distances  </code></pre>
+<p>fin pour</p>
+<p>// Trier le tableau des distances par distance croissante<br/>
+trier distances par le premier élément de chaque paire (distance)</p>
+<p>// Sélectionner les k premiers éléments du tableau trié<br/>
+voisins_proches = sous-tableau de distances des indices 1 à k</p>
+<p>afficher voisins_proches</p>
+<p>FIN</p>
+<p>FONCTION distance_entre(p1, p2)<br/>
+somme = 0</p>
+<pre><code>pour j de 1 à longueur(p1):  
+    
+    somme = somme + (p1[j] - p2[j])^2  
+fin pour  
+retourner racine_carrée(somme)  </code></pre>
+<p>FIN FONCTION</p>
+<h2 id="L'impl%C3%A9mentation-python">L'implémentation python<a class="anchor-link" href="#L'impl%C3%A9mentation-python">¶</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">distance_entre</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">((</span><span class="n">p1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p1</span><span class="p">))))</span>
+
+<span class="k">def</span> <span class="nf">k_plus_proches_voisins</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">distances</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance_entre</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">point</span><span class="p">)</span>
+        <span class="n">distances</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">distance</span><span class="p">,</span> <span class="n">point</span><span class="p">))</span>
+    
+    <span class="c1"># Trier par distance</span>
+    <span class="n">distances</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    
+    <span class="c1"># Sélectionner les k premiers voisins</span>
+    <span class="n">voisins_proches</span> <span class="o">=</span> <span class="n">distances</span><span class="p">[:</span><span class="n">k</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">voisins_proches</span>
+
+<span class="c1"># Exemple d'utilisation</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+<span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="n">voisins_proches</span> <span class="o">=</span> <span class="n">k_plus_proches_voisins</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Les k plus proches voisins sont :"</span><span class="p">,</span> <span class="n">voisins_proches</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a4b83f50-b597-4a2e-b238-a89838e0cc87">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="algorithme-glouton-(le-sac-%C3%A0-dos-/-le-rendu-de-monnaie)">algorithme glouton (le sac à dos / le rendu de monnaie)<a class="anchor-link" href="#algorithme-glouton-(le-sac-%C3%A0-dos-/-le-rendu-de-monnaie)">¶</a></h1><p>VARIABLE<br/>
+valeurs : tableau des valeurs des objets<br/>
+poids : tableau des poids des objets<br/>
+capacite : entier (capacité maximale du sac à dos)<br/>
+n : entier (nombre d'objets)<br/>
+ratio : tableau de paires (ratio, index)<br/>
+poids_total : entier<br/>
+valeur_totale : entier<br/>
+i : entier</p>
+<p>DEBUT<br/>
+// Calculer le ratio valeur/poids pour chaque objet<br/>
+pour i de 1 à n:<br/>
+ratio[i] = (valeurs[i] / poids[i], i)<br/>
+fin pour</p>
+<p>// Trier les objets par leur ratio valeur/poids décroissant<br/>
+trier ratio par le premier élément de chaque paire (ratio) en ordre décroissant</p>
+<p>poids_total = 0<br/>
+valeur_totale = 0</p>
+<p>// Ajouter les objets au sac à dos jusqu'à atteindre la capacité maximale<br/>
+pour i de 1 à n:</p>
+<pre><code>si poids_total + poids[ratio[i].index] &lt;= capacite:  
+    poids_total = poids_total + poids[ratio[i].index]  
+    valeur_totale = valeur_totale + valeurs[ratio[i].index]  
+fin si </code></pre>
+<p>fin pour</p>
+<p>afficher "Valeur totale dans le sac à dos:", valeur_totale</p>
+<p>FIN</p>
+<h2 id="L'impl%C3%A9mentation-python">L'implémentation python<a class="anchor-link" href="#L'impl%C3%A9mentation-python">¶</a></h2><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">knapsack_glouton</span><span class="p">(</span><span class="n">valeurs</span><span class="p">,</span> <span class="n">poids</span><span class="p">,</span> <span class="n">capacite</span><span class="p">):</span>
+    <span class="c1"># Calculer le ratio valeur/poids pour chaque objet</span>
+    <span class="n">ratio</span> <span class="o">=</span> <span class="p">[(</span><span class="n">valeurs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">poids</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">valeurs</span><span class="p">))]</span>
+    
+    <span class="c1"># Trier les objets par leur ratio valeur/poids décroissant</span>
+    <span class="n">ratio</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="n">poids_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">valeur_totale</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Ajouter les objets au sac à dos jusqu'à atteindre la capacité maximale</span>
+    <span class="k">for</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ratio</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">poids_total</span> <span class="o">+</span> <span class="n">poids</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">capacite</span><span class="p">:</span>
+            <span class="n">poids_total</span> <span class="o">+=</span> <span class="n">poids</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">valeur_totale</span> <span class="o">+=</span> <span class="n">valeurs</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">valeur_totale</span>
+
+<span class="c1"># Exemple d'utilisation</span>
+<span class="n">valeurs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">60</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">120</span><span class="p">]</span>
+<span class="n">poids</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="n">capacite</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="n">valeur_totale</span> <span class="o">=</span> <span class="n">knapsack_glouton</span><span class="p">(</span><span class="n">valeurs</span><span class="p">,</span> <span class="n">poids</span><span class="p">,</span> <span class="n">capacite</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Valeur totale dans le sac à dos:"</span><span class="p">,</span> <span class="n">valeur_totale</span><span class="p">)</span>
+</pre></div>
+<h2 id="Le-rendu-de-monnaire-(A-connaitre)">Le rendu de monnaire (A connaitre)<a class="anchor-link" href="#Le-rendu-de-monnaire-(A-connaitre)">¶</a></h2><p>Entrées :</p>
+<p>montant : le montant à rendre<br/>
+valeurs : une liste des valeurs des pièces et billets disponibles, triée par ordre décroissant<br/>
+Sorties :  Une liste des pièces et billets utilisés pour rendre le montant</p>
+<p>DEBUT</p>
+<p>fonction rendre_monnaie_glouton(montant, valeurs):<br/>
+rendu = liste vide<br/>
+pour chaque valeur dans valeurs:<br/>
+tant que montant est supérieur ou égal à valeur:<br/>
+ajouter valeur à rendu<br/>
+montant = montant - valeur<br/>
+si montant != 0:<br/>
+afficher "Impossible de rendre le montant avec les valeurs disponibles"<br/>
+retourner rendu</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rendu_monnaie_glouton</span><span class="p">(</span><span class="n">somme_a_rendre</span><span class="p">,</span> <span class="n">pieces_disponibles</span><span class="p">):</span>
+    <span class="n">nombre_total_pieces</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">pieces_disponibles</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pieces_disponibles</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">piece</span> <span class="ow">in</span> <span class="n">pieces_disponibles</span><span class="p">:</span>
+        <span class="k">while</span> <span class="n">somme_a_rendre</span> <span class="o">&gt;=</span> <span class="n">piece</span><span class="p">:</span>
+            <span class="n">somme_a_rendre</span> <span class="o">-=</span> <span class="n">piece</span>
+            <span class="n">nombre_total_pieces</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">nombre_total_pieces</span>
+
+<span class="c1"># Test avec une somme à rendre de 2,63 €</span>
+<span class="n">somme_test</span> <span class="o">=</span> <span class="mf">2.63</span>
+<span class="n">pieces_disponibles_test</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span>
+
+<span class="n">resultat</span> <span class="o">=</span> <span class="n">rendu_monnaie_glouton</span><span class="p">(</span><span class="n">somme_test</span><span class="p">,</span> <span class="n">pieces_disponibles_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pour rendre </span><span class="si">{</span><span class="n">somme_test</span><span class="si">}</span><span class="s2"> €, le nombre minimal de pièces est : </span><span class="si">{</span><span class="n">resultat</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=760733c5-e343-4b20-89a4-57b51bce90de">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Exercice-bac-epreuve-pratique">Exercice bac epreuve pratique<a class="anchor-link" href="#Exercice-bac-epreuve-pratique">¶</a></h2><p>On dispose d’un ensemble d’objets dont on connaît, pour chacun, la masse. On souhaite
+ranger l’ensemble de ces objets dans des boites identiques de telle manière que la somme
+des masses des objets contenus dans une boîte ne dépasse pas la capacitécde la boîte. On
+souhaite utiliser le moins de boîtes possibles pour ranger cet ensemble d’objets.</p>
+<p>Pour résoudre ce problème, on utilisera un algorithme glouton consistant à placer chacun
+des objets dans la première boîte où cela est possible.</p>
+<p>Par exemple, pour ranger dans des boîtes de capacitéc = 5un ensemble de trois objets
+dont les masses sont représentées en Python par la liste[1, 5, 2], on procède de la
+façon suivante :</p>
+<ul>
+<li>Le premier objet, de masse 1, va dans une première boite.</li>
+<li>Le deuxième objet, de masse 5, ne peut pas aller dans la même boite que le premier
+objet car cela dépasserait la capacité de la boite. On place donc cet objet dans une
+deuxième boîte.</li>
+<li>Le troisième objet, de masse 2, va dans la première boîte.</li>
+</ul>
+<p>On a donc utilisé deux boîtes de capacitéc = 5pour ranger les 3 objets.</p>
+<p>Compléter la fonction Pythonempaqueter(liste_masses, c)suivante pour qu’elle
+renvoie le nombre de boîtes de capacité c nécessaires pour empaqueter un ensemble
+d’objets dont les masses sont contenues dans la listeliste_masses. On supposera que
+toutes les masses sont inférieures ou égales à c.</p>
+<p><strong>def</strong> empaqueter(liste_masses, c):</p>
+<pre><code>"""Renvoie le nombre minimal de boîtes nécessaires pour
+empaqueter les objets de la liste liste_masses, sachant
+que chaque boîte peut contenir au maximum c kilogrammes"""  
+n = len(liste_masses)  
+nb_boites = 0  
+boites = [ 0 **for** _ **in** range(n) ]  
+**for** masse **in** ...:  
+    i = 0  
+    **while** i &lt; nb_boites **and** boites[i] + ... &gt; c:
+        i = i + 1  
+        **if** i == nb_boites: 
+            ...  
+        boites[i] = ...
+    *return** ...</code></pre>
+<p>Exemples :</p>
+<blockquote>
+<p>empaqueter([1, 2, 3, 4, 5], 10)<br/>
+2<br/>
+empaqueter([1, 2, 3, 4, 5], 5)<br/>
+4<br/>
+empaqueter([7, 6, 3, 4, 8, 5, 9, 2], 11)<br/>
+5</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1a358618-da9a-4b20-a3a6-f981ae144e9e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=526f64ee-b97f-41f4-818f-93eea1501d9b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bfdb757f-7862-45f2-a818-fcc5b754dbf0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e97275dc-9563-468d-b7b7-99e26a7c7028">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd5949d8-96e0-4122-b22e-f7b9a48379f6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1caca85e-b572-40a7-8e99-c8d9f3caaa2a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</section>
+</body>
+</html>
