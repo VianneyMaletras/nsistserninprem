@@ -1,0 +1,850 @@
+{
+    "AIR": {
+        "id": 0,
+        "nom_fr": "Air",
+        "donnees": {}
+    },
+    "STONE": {
+        "id": 1,
+        "nom_fr": "Roche",
+        "donnees": {}
+    },
+    "GRASS": {
+        "id": 2,
+        "nom_fr": "Herbe",
+        "donnees": {}
+    },
+    "DIRT": {
+        "id": 3,
+        "nom_fr": "Terre",
+        "donnees": {}
+    },
+    "COBBLESTONE": {
+        "id": 4,
+        "nom_fr": "Pierre",
+        "donnees": {}
+    },
+    "WOOD_PLANKS": {
+        "id": 5,
+        "nom_fr": "Planche",
+        "donnees": {
+            "0": {
+                "us": "Oak",
+                "fr": "chêne"
+            },
+            "1": {
+                "us": "Spruce",
+                "fr": "épicéa"
+            },
+            "2": {
+                "us": "Birch",
+                "fr": "bouleau"
+            },
+            "3": {
+                "us": "Jungle",
+                "fr": "jungle"
+            }
+        }
+    },
+    "SAPLING": {
+        "id": 6,
+        "nom_fr": "Pousse d'arbre",
+        "donnees": {}
+    },
+    "BEDROCK": {
+        "id": 7,
+        "nom_fr": "Bedrock",
+        "donnees": {}
+    },
+    "WATER_FLOWING": {
+        "id": 8,
+        "nom_fr": "Eau",
+        "donnees": {}
+    },
+    "WATER_STATIONARY": {
+        "id": 9,
+        "nom_fr": "Eau stationnaire",
+        "donnees": {
+            "0": {
+                "us": "the highest",
+                "fr": "le plus élevé"
+            },
+            "1": {
+                "us": "level 1",
+                "fr": "niveau 1"
+            },
+            "2": {
+                "us": "level 2",
+                "fr": "niveau 2"
+            },
+            "3": {
+                "us": "level 3",
+                "fr": "niveau 3"
+            },
+            "4": {
+                "us": "level 4",
+                "fr": "niveau 4"
+            },
+            "5": {
+                "us": "level 5",
+                "fr": "niveau 5"
+            },
+            "6": {
+                "us": "level 6",
+                "fr": "niveau 6"
+            },
+            "7": {
+                "us": "the lowest",
+                "fr": "le plus bas"
+            }
+        }
+    },
+    "LAVA_FLOWING": {
+        "id": 10,
+        "nom_fr": "Lave",
+        "donnees": {}
+    },
+    "LAVA_STATIONARY": {
+        "id": 11,
+        "nom_fr": "Lave stationnaire",
+        "donnees": {
+            "0": {
+                "us": "the highest",
+                "fr": "le plus élevé"
+            },
+            "1": {
+                "us": "level 1",
+                "fr": "niveau 1"
+            },
+            "2": {
+                "us": "level 2",
+                "fr": "niveau 2"
+            },
+            "3": {
+                "us": "level 3",
+                "fr": "niveau 3"
+            },
+            "4": {
+                "us": "level 4",
+                "fr": "niveau 4"
+            },
+            "5": {
+                "us": "level 5",
+                "fr": "niveau 5"
+            },
+            "6": {
+                "us": "level 6",
+                "fr": "niveau 6"
+            },
+            "7": {
+                "us": "the lowest",
+                "fr": "le plus bas"
+            }
+        }
+    },
+    "SAND": {
+        "id": 12,
+        "nom_fr": "Sable",
+        "donnees": {}
+    },
+    "GRAVEL": {
+        "id": 13,
+        "nom_fr": "Gravier",
+        "donnees": {}
+    },
+    "GOLD_ORE": {
+        "id": 14,
+        "nom_fr": "Minerai d'or",
+        "donnees": {}
+    },
+    "IRON_ORE": {
+        "id": 15,
+        "nom_fr": "Minerai de fer",
+        "donnees": {}
+    },
+    "COAL_ORE": {
+        "id": 16,
+        "nom_fr": "Minerai de charbon",
+        "donnees": {}
+    },
+    "WOOD": {
+        "id": 17,
+        "nom_fr": "Bois",
+        "donnees": {
+            "0": {
+                "us": "Oak",
+                "fr": "chêne - orienté haut-bas"
+            },
+            "1": {
+                "us": "Spruce",
+                "fr": "épicéa - orienté haut-bas"
+            },
+            "2": {
+                "us": "Birch",
+                "fr": "bouleau - orienté haut-bas"
+            },
+            "3": {
+                "us": "Jungle",
+                "fr": "orienté haut-bas"
+            },
+            "4": {
+                "us": "Oak",
+                "fr": "chêne - orienté est-ouest"
+            },
+            "5": {
+                "us": "Spruce",
+                "fr": "épicéa - orienté est-ouest"
+            },
+            "6": {
+                "us": "Birch",
+                "fr": "bouleau - orienté est-ouest"
+            },
+            "7": {
+                "us": "Jungle",
+                "fr": "orienté est-ouest"
+            },
+            "8": {
+                "us": "Oak",
+                "fr": "chêne - orienté nord-sud"
+            },
+            "9": {
+                "us": "Spruce",
+                "fr": "épicéa - orienté nord-sud"
+            },
+            "10": {
+                "us": "Birch",
+                "fr": "bouleau - orienté nord-sud"
+            },
+            "11": {
+                "us": "Jungle",
+                "fr": "jungle - orienté nord-sud"
+            },
+            "12": {
+                "us": "Oak",
+                "fr": "chêne - écorce seule"
+            },
+            "13": {
+                "us": "Spruce",
+                "fr": "épicéa - écorce seule"
+            },
+            "14": {
+                "us": "Birch",
+                "fr": "bouleau - écorce seule"
+            },
+            "15": {
+                "us": "Jungle",
+                "fr": "écorce seule"
+            }
+        }
+    },
+    "LEAVES": {
+        "id": 18,
+        "nom_fr": "Feuillage",
+        "donnees": {
+            "1": {
+                "us": "Oak leaves",
+                "fr": "feuillage de chêne"
+            },
+            "2": {
+                "us": "Spruce leaves",
+                "fr": "feuillage d'épicéa"
+            },
+            "3": {
+                "us": "Birch leaves",
+                "fr": "feuillage de bouleau"
+            }
+        }
+    },
+    "GLASS": {
+        "id": 20,
+        "nom_fr": "Verre",
+        "donnees": {}
+    },
+    "LAPIS_LAZULI_ORE": {
+        "id": 21,
+        "nom_fr": "Minerai de lapis-lazuli",
+        "donnees": {}
+    },
+    "LAPIS_LAZULI_BLOCK": {
+        "id": 22,
+        "nom_fr": "Bloc de lapis-lazuli",
+        "donnees": {}
+    },
+    "SANDSTONE": {
+        "id": 24,
+        "nom_fr": "Grès",
+        "donnees": {
+            "0": {
+                "us": "Sandstone",
+                "fr": "grès"
+            },
+            "1": {
+                "us": "Chiseled sandstone",
+                "fr": "grès gravé"
+            },
+            "2": {
+                "us": "Smooth sandstone",
+                "fr": "grès poli"
+            }
+        }
+    },
+    "BED": {
+        "id": 26,
+        "nom_fr": "Lit",
+        "donnees": {}
+    },
+    "COBWEB": {
+        "id": 30,
+        "nom_fr": "Toile d'araignée",
+        "donnees": {}
+    },
+    "GRASS_TALL": {
+        "id": 31,
+        "nom_fr": "Herbe haute",
+        "donnees": {
+            "0": {
+                "us": "Shrub",
+                "fr": "arbuste"
+            },
+            "1": {
+                "us": "Grass",
+                "fr": "herbe"
+            },
+            "2": {
+                "us": "Fern",
+                "fr": "fougère"
+            },
+            "3": {
+                "us": "Grass",
+                "fr": "couleur affectée par le biome c'est-à-dire le type de végétation dominante de la région - pas sur le Pi"
+            }
+        }
+    },
+    "WOOL": {
+        "id": 35,
+        "nom_fr": "Laine",
+        "donnees": {
+            "0": {
+                "us": "White",
+                "fr": "blanc"
+            },
+            "1": {
+                "us": "Orange",
+                "fr": "orange"
+            },
+            "2": {
+                "us": "Magenta",
+                "fr": "magenta"
+            },
+            "3": {
+                "us": "Light Blue",
+                "fr": "bleu ciel"
+            },
+            "4": {
+                "us": "Yellow",
+                "fr": "jaune"
+            },
+            "5": {
+                "us": "Lime",
+                "fr": "vert clair"
+            },
+            "6": {
+                "us": "Pink",
+                "fr": "rose"
+            },
+            "7": {
+                "us": "Grey",
+                "fr": "gris"
+            },
+            "8": {
+                "us": "Light grey",
+                "fr": "gris clair"
+            },
+            "9": {
+                "us": "Cyan",
+                "fr": "cyan"
+            },
+            "10": {
+                "us": "Purple",
+                "fr": "violet"
+            },
+            "11": {
+                "us": "Blue",
+                "fr": "bleu"
+            },
+            "12": {
+                "us": "Brown",
+                "fr": "marron"
+            },
+            "13": {
+                "us": "Green",
+                "fr": "vert"
+            },
+            "14": {
+                "us": "Red",
+                "fr": "rouge"
+            },
+            "15": {
+                "us": "Black",
+                "fr": "noir"
+            }
+        }
+    },
+    "FLOWER_YELLOW": {
+        "id": 37,
+        "nom_fr": "Pissenlit",
+        "donnees": {}
+    },
+    "FLOWER_CYAN": {
+        "id": 38,
+        "nom_fr": "Fleur cyan",
+        "donnees": {}
+    },
+    "MUSHROOM_BROWN": {
+        "id": 39,
+        "nom_fr": "Champignon brun",
+        "donnees": {}
+    },
+    "MUSHROOM_RED": {
+        "id": 40,
+        "nom_fr": "Champignon rouge",
+        "donnees": {}
+    },
+    "GOLD_BLOCK": {
+        "id": 41,
+        "nom_fr": "Bloc d'or",
+        "donnees": {}
+    },
+    "IRON_BLOCK": {
+        "id": 42,
+        "nom_fr": "Bloc de fer",
+        "donnees": {}
+    },
+    "STONE_SLAB_DOUBLE": {
+        "id": 43,
+        "nom_fr": "Double dalle",
+        "donnees": {
+            "0": {
+                "us": "Stone",
+                "fr": "roche"
+            },
+            "1": {
+                "us": "Sandstone",
+                "fr": "grès"
+            },
+            "2": {
+                "us": "Wooden",
+                "fr": "bois"
+            },
+            "3": {
+                "us": "Cobblestone",
+                "fr": "pierre"
+            },
+            "4": {
+                "us": "Brick",
+                "fr": "brique"
+            },
+            "5": {
+                "us": "Stone Brick",
+                "fr": "pierre taillée"
+            },
+            "6": {
+                "us": "Nether Brick",
+                "fr": "brique du Nether"
+            },
+            "7": {
+                "us": "Quartz",
+                "fr": "quartz"
+            }
+        }
+    },
+    "STONE_SLAB": {
+        "id": 44,
+        "nom_fr": "Dalle",
+        "donnees": {
+            "0": {
+                "us": "Stone",
+                "fr": "roche"
+            },
+            "1": {
+                "us": "Sandstone",
+                "fr": "grès"
+            },
+            "2": {
+                "us": "Wooden",
+                "fr": "bois"
+            },
+            "3": {
+                "us": "Cobblestone",
+                "fr": "pierre"
+            },
+            "4": {
+                "us": "Brick",
+                "fr": "brique"
+            },
+            "5": {
+                "us": "Stone Brick",
+                "fr": "pierre taillée"
+            },
+            "6": {
+                "us": "Nether Brick",
+                "fr": "brique du Nether"
+            },
+            "7": {
+                "us": "Quartz",
+                "fr": "quartz"
+            }
+        }
+    },
+    "BRICK_BLOCK": {
+        "id": 45,
+        "nom_fr": "Bloc de brique d'argile",
+        "donnees": {}
+    },
+    "TNT": {
+        "id": 46,
+        "nom_fr": "TNT",
+        "donnees": {
+            "0": {
+                "us": "Inactive",
+                "fr": "Inactif"
+            },
+            "1": {
+                "us": "Ready to blow",
+                "fr": "Prêt à exploser"
+            }
+        }
+    },
+    "BOOKSHELF": {
+        "id": 47,
+        "nom_fr": "Bibliothèque",
+        "donnees": {}
+    },
+    "MOSS_STONE": {
+        "id": 48,
+        "nom_fr": "Pierre moussue",
+        "donnees": {}
+    },
+    "OBSIDIAN": {
+        "id": 49,
+        "nom_fr": "Obsidienne",
+        "donnees": {}
+    },
+    "TORCH": {
+        "id": 50,
+        "nom_fr": "Torche",
+        "donnees": {
+            "1": {
+                "us": "Pointing east",
+                "fr": "vers l'est"
+            },
+            "2": {
+                "us": "Pointing west",
+                "fr": "vers l'ouest"
+            },
+            "3": {
+                "us": "Pointing south",
+                "fr": "vers le sud"
+            },
+            "4": {
+                "us": "Pointing north",
+                "fr": "vers le nord"
+            },
+            "5": {
+                "us": "Facing up",
+                "fr": "vers le haut"
+            }
+        }
+    },
+    "FIRE": {
+        "id": 51,
+        "nom_fr": "Feu",
+        "donnees": {}
+    },
+    "STAIRS_WOOD": {
+        "id": 53,
+        "nom_fr": "Escalier de bois",
+        "donnees": {
+            "0": {
+                "us": "Ascending east",
+                "fr": "montant vers l'est"
+            },
+            "1": {
+                "us": "Ascending west",
+                "fr": "montant vers l'ouest"
+            },
+            "2": {
+                "us": "Ascending south",
+                "fr": "montant vers le sud"
+            },
+            "3": {
+                "us": "Ascending north",
+                "fr": "montant vers le nord"
+            },
+            "4": {
+                "us": "Ascending east (upside down)",
+                "fr": "montant vers l'est (à l'envers)"
+            },
+            "5": {
+                "us": "Ascending west (upside down)",
+                "fr": "montant vers l'ouest (à l'envers)"
+            },
+            "6": {
+                "us": "Ascending south (upside down)",
+                "fr": "montant vers le sud (à l'envers)"
+            },
+            "7": {
+                "us": "Ascending north (upside down)",
+                "fr": "montant vers le nord (à l'envers)"
+            }
+        }
+    },
+    "CHEST": {
+        "id": 54,
+        "nom_fr": "Coffre",
+        "donnees": {}
+    },
+    "DIAMOND_ORE": {
+        "id": 56,
+        "nom_fr": "Minerai de diamant",
+        "donnees": {}
+    },
+    "DIAMOND_BLOCK": {
+        "id": 57,
+        "nom_fr": "Bloc de diamant",
+        "donnees": {}
+    },
+    "CRAFTING_TABLE": {
+        "id": 58,
+        "nom_fr": "Établi",
+        "donnees": {}
+    },
+    "FARMLAND": {
+        "id": 60,
+        "nom_fr": "Terre labourée",
+        "donnees": {}
+    },
+    "FURNACE_INACTIVE": {
+        "id": 61,
+        "nom_fr": "Fourneau",
+        "donnees": {}
+    },
+    "FURNACE_ACTIVE": {
+        "id": 62,
+        "nom_fr": "Fourneau en utilisation",
+        "donnees": {}
+    },
+    "DOOR_WOOD": {
+        "id": 64,
+        "nom_fr": "Porte en bois",
+        "donnees": {}
+    },
+    "LADDER": {
+        "id": 65,
+        "nom_fr": "Échelle",
+        "donnees": {}
+    },
+    "STAIRS_COBBLESTONE": {
+        "id": 67,
+        "nom_fr": "Escalier de pierre",
+        "donnees": {
+            "0": {
+                "us": "Ascending east",
+                "fr": "montant vers l'est"
+            },
+            "1": {
+                "us": "Ascending west",
+                "fr": "montant vers l'ouest"
+            },
+            "2": {
+                "us": "Ascending south",
+                "fr": "montant vers le sud"
+            },
+            "3": {
+                "us": "Ascending north",
+                "fr": "montant vers le nord"
+            },
+            "4": {
+                "us": "Ascending east (upside down)",
+                "fr": "montant vers l'est (à l'envers)"
+            },
+            "5": {
+                "us": "Ascending west (upside down)",
+                "fr": "montant vers l'ouest (à l'envers)"
+            },
+            "6": {
+                "us": "Ascending south (upside down)",
+                "fr": "montant vers le sud (à l'envers)"
+            },
+            "7": {
+                "us": "Ascending north (upside down)",
+                "fr": "montant vers le nord (à l'envers)"
+            }
+        }
+    },
+    "DOOR_IRON": {
+        "id": 71,
+        "nom_fr": "Porte en fer",
+        "donnees": {}
+    },
+    "REDSTONE_ORE": {
+        "id": 73,
+        "nom_fr": "Minerai de redstone",
+        "donnees": {}
+    },
+    "SNOW": {
+        "id": 78,
+        "nom_fr": "Neige",
+        "donnees": {}
+    },
+    "ICE": {
+        "id": 79,
+        "nom_fr": "Glace",
+        "donnees": {}
+    },
+    "SNOW_BLOCK": {
+        "id": 80,
+        "nom_fr": "Bloc de neige",
+        "donnees": {
+            "0": {
+                "us": "the lowest",
+                "fr": "le plus bas"
+            },
+            "1": {
+                "us": "level 1",
+                "fr": "niveau 1"
+            },
+            "2": {
+                "us": "level 2",
+                "fr": "niveau 2"
+            },
+            "3": {
+                "us": "level 3",
+                "fr": "niveau 3"
+            },
+            "4": {
+                "us": "level 4",
+                "fr": "niveau 4"
+            },
+            "5": {
+                "us": "level 5",
+                "fr": "niveau 5"
+            },
+            "6": {
+                "us": "level 6",
+                "fr": "niveau 6"
+            },
+            "7": {
+                "us": "the highest",
+                "fr": " le plus élevé"
+            }
+        }
+    },
+    "CACTUS": {
+        "id": 81,
+        "nom_fr": "Cactus",
+        "donnees": {}
+    },
+    "CLAY": {
+        "id": 82,
+        "nom_fr": "Bloc d'argile",
+        "donnees": {}
+    },
+    "SUGAR_CANE": {
+        "id": 83,
+        "nom_fr": "Canne à sucre",
+        "donnees": {}
+    },
+    "FENCE": {
+        "id": 85,
+        "nom_fr": "Barrière",
+        "donnees": {}
+    },
+    "GLOWSTONE_BLOCK": {
+        "id": 89,
+        "nom_fr": "Bloc de glowstone",
+        "donnees": {}
+    },
+    "BEDROCK_INVISIBLE": {
+        "id": 95,
+        "nom_fr": "Bedrock invisible",
+        "donnees": {}
+    },
+    "STONE_BRICK": {
+        "id": 98,
+        "nom_fr": "Brique de pierre",
+        "donnees": {
+            "0": {
+                "us": "Stone brick",
+                "fr": "pierre taillée"
+            },
+            "1": {
+                "us": "Mossy stone brick",
+                "fr": "pierre taillée moussue"
+            },
+            "2": {
+                "us": "Cracked stone brick",
+                "fr": "pierre taillée craquelée"
+            },
+            "3": {
+                "us": "Chiseled stone brick",
+                "fr": "pierre sculptée"
+            }
+        }
+    },
+    "GLASS_PANE": {
+        "id": 102,
+        "nom_fr": "Vitre",
+        "donnees": {}
+    },
+    "MELON": {
+        "id": 103,
+        "nom_fr": "Bloc de pastèque",
+        "donnees": {}
+    },
+    "FENCE_GATE": {
+        "id": 107,
+        "nom_fr": "Portillon",
+        "donnees": {
+            "2": {
+                "us": "To the north",
+                "fr": "Vers le nord"
+            },
+            "3": {
+                "us": "To the south",
+                "fr": "Vers le sud"
+            },
+            "4": {
+                "us": "To the west",
+                "fr": "Vers l'ouest"
+            },
+            "5": {
+                "us": "To the east",
+                "fr": "Vers l'est"
+            }
+        }
+    },
+    "GLOWING_OBSIDIAN": {
+        "id": 246,
+        "nom_fr": "Obsidienne flamboyante",
+        "donnees": {}
+    },
+    "NETHER_REACTOR_CORE": {
+        "id": 247,
+        "nom_fr": "Coeur de réacteur du Nether",
+        "donnees": {
+            "0": {
+                "us": "Not used",
+                "fr": "Non utilisé"
+            },
+            "1": {
+                "us": "Active",
+                "fr": "Actif"
+            },
+            "2": {
+                "us": "Stopped/end of life",
+                "fr": "Arrêté/en fin de vie"
+            }
+        }
+    }
+}
