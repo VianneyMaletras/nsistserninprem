@@ -1,0 +1,60 @@
+
+
+div.box {
+    
+    /* border-color: rgb(224, 62, 62);
+    padding:0 5% */
+    margin: 1.5rem 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.cstyle {
+    background-color:rgb(224, 62, 62); ;
+}
+div.box > .box-label {
+    color: rgb(250, 222, 222);
+    padding:0%
+}
+div.box > .box-label {
+    font-weight: 500;
+    padding: .2rem .6rem;
+    
+}
+.warningbglabel{
+background-color:rgb(224, 62, 62);
+}
+.warning{
+    background-color:rgb(250, 222, 222);
+    border-color:rgb(224, 62, 62);
+}
+
+.paddingside2 {
+    padding: 0% 2%;
+}
+
+.boxcontentnote {
+    background-color: rgb(252, 238, 214) !important;
+    border-color: rgb(237, 153, 9);
+}
+.boxbglabelnote{
+  
+    background-color:rgb(237, 153, 9)
+}
+.boxcontentobservation {
+    background-color: rgb(205, 218, 255) !important;
+    border-color: #093df5;
+}
+.boxbglabelobservation{
+  
+    background-color:#093df5;
+}
+.bordernotice{
+   border-color: rgb(255, 180, 9)
+}
+.padleft10px{
+    padding-left: 10px;
+}
+.maxwidth500px{
+    max-width: 500px;
+}

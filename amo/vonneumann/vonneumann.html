@@ -29,38 +29,45 @@
   <!-- Template Main CSS File -->
   <link href="../../assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Selecao
-  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Template Main CSS File -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/stylevirou.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+  
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
+  
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <h1><a href="../../index.html">Accueil</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-     
-      
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Accueil</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <div class="logo">
+      <!-- <h1><a href="index.html">Nsi</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.html"><img src="../../assets/img/lycee/BandeauENT Laura Compa.jpg" alt="" class="img-fluid"></a> -->
     </div>
-  </header><!-- End Header -->
 
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
+        <li><a class="nav-link scrollto" href="#resume">Résumé du cours</a></li>
+
+        <li><a class="nav-link scrollto" href="#annexes">Annexes</a></li>
+        <!-- <li><a class="nav-link scrollto" href="#exos">Exercices</a></li> -->
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -68,12 +75,16 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <!-- <h2>          <li><a class="nav-link scrollto " href="../../index.html">Accueil</a></li>
-          </h2> -->
-          <ol>
-            <li><a href="../../index.html">Accueil</a></li>
-            <li a href="#">AMO- Von Neumann</li>
-          </ol>
+         
+          <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">AMO- Von Neumann </h2>
+                <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
+              </div>
+            </div> <!---->
         </div>
 
       </div>
@@ -100,23 +111,7 @@
                 <br/>Dérouler l’exécution d’une séquence d’instructions simples du type langage machine
               </td>
             </tr>
-            <!-- <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-              <td></td>
-              <td>
-                
-                </td>
-              <td>La présentation se limite aux concepts généraux.<br>
-                <br>On distingue les architectures monoprocesseur et les architectures multiprocesseur.
-                <br>Des activités débranchées sont proposées.
-                <br>Les circuits combinatoires réalisent des fonctions booléennes.
-                </td> -->
+           
             </tr> 
           </tbody>
         </table>
@@ -128,6 +123,39 @@
     </section>
 
   </main><!-- End #main -->
+  <!-- ======= Resume Section ======= -->
+  <section id="resume" class="about">
+    <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+        <!-- <h2>Resumé du cours à venir</h2>-->
+        <h2>Resumé du cours</h2>
+        <p>Architecture von neumann
+        <ul> Un ordinateur:
+          <li>Un ordinateur est composé de plusieurs éléments essentiels: le processeur (CPU), la mémoire, les entrées et les sorties.</li>
+          <li>Le CPU comprend l’unité de contrôle qui décode les instructions et l’unité arithmétique et logique qui effectue les calculs.</li>
+          <li>La mémoire stocke les données et les instructions (programmes) utilisées par le processeur. Il existe différents types de mémoire avec des temps d’accès variés (registres, mémoire cache, RAM, disque dur, etc.).</li>
+          <li>Les entrées permettent d’alimenter la machine en données et instructions, tandis que les sorties permettent de récupérer les résultats.</li>
+        
+        </ul>
+
+
+
+        La POO consiste à réunir les données caractérisant un objet et leur traitement, dans une unité autonome. On
+        parle <b>d’encapsulation.</b></p>
+      </div>
+
+      <img class="maxwidth500px" src="./ressources/schema-von.png" alt="Schéma architecture von neumann" text="Schéma architecture von neumann"/>
+      <ul>
+      <li>Le modèle de von Neumann propose de considérer un programme comme une donnée stockée en mémoire, ce qui permet d’automatiser l’exécution des tâches.</li>
+      <li>Les différents composants communiquent via des bus informatiques qui transmettent les données, les adresses et les signaux de contrôle.</li>
+      <li> Bien  que le modèle de base soit toujours utilisé, il a évolué avec l’ajout de processeurs spécialisés, de mémoires persistantes (ROM), etc.</li>
+      </ul>
+      
+      
+
+    </div>
+  </section><!-- End resume Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
