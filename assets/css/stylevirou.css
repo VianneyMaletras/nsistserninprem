@@ -58,3 +58,6 @@ background-color:rgb(224, 62, 62);
 .maxwidth500px{
     max-width: 500px;
 }
+.justifier{
+    text-align: justify;
+}
