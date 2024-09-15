@@ -1,0 +1,122 @@
+/* TIMELINE
+			–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline2 {
+    top: calc(100%-600px);
+    position: relative;
+    scroll-behavior: smooth;
+    
+}
+
+.timeline2 *,
+.timeline2 *::before,
+.timeline2 *::after {
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ligne*/
+.timeline2 ul li {
+    list-style-type: none;
+    position: relative;
+    width: 2px;
+    /* width: 6px; */
+    margin: 0 auto;
+    padding-top: 10px;
+    /* 50px; */
+    padding-bottom: 10px;
+    /* padding-bottom: 20px; = center padding-bottom: 10px; = center */
+    background: #4b7ae0;
+    /* background: black;  */
+
+    border-left: 3px double rgb(23, 60, 161);
+
+}
+
+/*flèche*/
+.timeline2 ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-55%);
+    -webkit-transform: translateX(-55%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    border: 2px solid #03A9F4;
+}
+
+/*cadre*/
+.timeline2 ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #03A9F4;
+    text-align: justify;
+}
+
+/*flèche*/
+.timeline2 ul li div::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline2 ul li:nth-child(odd) div {
+    left: 50px;
+}
+
+/*masque puce*/
+.timeline2 ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 16px 16px 16px 0;
+    /* border-width: 8px 16px 8px 0; */
+    border-color: transparent #03A9F4 transparent transparent;
+}
+
+.timeline2 ul li:nth-child(even) div {
+    left: -450px;
+}
+
+/*masque puce*/
+.timeline2 ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 16px 0 16px 16px;
+    /* border-width: 8px 0 8px 16px; */
+    border-color: transparent transparent transparent #03A9F4;
+}
+
+
+.timeline2 ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    width: 90px;
+}
+
+.timeline2 ul li:nth-child(even) .time {
+    position: absolute;
+    top: 20px;
+    right: -120px;
+    width: 90px;
+}
+
+
+.timeline2 time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.timeline2 img {
+    margin-bottom: 10px;
+}

@@ -61,3 +61,24 @@ background-color:rgb(224, 62, 62);
 .justifier{
     text-align: justify;
 }
+.timeline2 {
+    top: calc(100%-600px);
+    position: relative;
+    scroll-behavior: smooth;
+}
+#R-body img, #R-body figure > figcaption > h4, #R-body figure > figcaption > p, #R-body .video-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+}
+.timeline2 img {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+    max-width: -webkit-fill-available;
+}
