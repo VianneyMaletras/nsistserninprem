@@ -82,3 +82,8 @@ background-color:rgb(224, 62, 62);
     text-align: center;
     max-width: -webkit-fill-available;
 }
+pre code.hljs {
+
+    background-color: #282a36 ;
+    color: #d6e4e5;
+}

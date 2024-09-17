@@ -64,7 +64,15 @@
           <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
           <li><a class="nav-link scrollto" href="#resume">Résumé du cours</a></li>
 
-          <li><a class="nav-link scrollto" href="#annexes">Annexes</a></li>
+          <li class="dropdown"><a href="#"><span>Annexes</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+             <li><a href="#liens">Liens</a></li>
+              <li><a href="#pj">Pieces Jointes</a></li>
+       
+            </ul>
+          </li>
+    
+       
           <!-- <li><a class="nav-link scrollto" href="#exos">Exercices</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -168,28 +176,36 @@
                   <h3>Langage assembleur</h3>
                   <p class="justifier">
                     <ul>
-                        Le processeur peut:
-
-                    <li>additionner des nombres,</li>
-                    <li>comparer des nombres,</li>
-                    <li> charger une valeur depuis la mémoire,</li>
-                      <li> stocker une valeur en mémoire.</li>
-                        <li>Le code suivant ajoute $3+57$ et garde le résultat dans le registre R0.</li></ul>
-                        <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-                          <pre>
-                            <code class="">
-                              ADD R0,#3,#57
-                              HALT           
-                            </code></pre>
-                        </div>
-                        Le processeur ne peut manipuler que des nombres situés dans les registres (mémoires très rapides, avec des fréquences de fonctionnement similaires au processeur). Pour manipuler des données dans la mémoire vive, il faut d’abord les placer dans les registres.
-<br>
-Pour charger la valeur située à l’emplacement 36 de la mémoire:
-<div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-  <pre>
-    <code class="">
-      LDR R0,36          
-    </code></pre>
+                      Le processeur peut:
+                    
+                      <li><i class="ri-check-double-line"></i>additionner des nombres,</li>
+                      <li><i class="ri-check-double-line"></i>comparer des nombres,</li>
+                      <li> <i class="ri-check-double-line"></i>charger une valeur depuis la mémoire,</li>
+                      <li> <i class="ri-check-double-line"></i>stocker une valeur en mémoire.</li>
+                      <li>Le code suivant ajoute 3+57 et garde le résultat dans le registre R0.</li>
+                    </ul>
+                    <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full ">
+                      <pre>
+                        <code class="">
+                          ADD R0,#3,#57
+                          HALT           
+                        </code></pre>
+                    </div>
+                    </p>
+                    <p class="justifier">
+                      Le processeur ne peut manipuler que des nombres situés dans les registres (mémoires très rapides, avec des fréquences
+                      de fonctionnement similaires au processeur).
+                      <br><br>
+                      Pour manipuler des données dans la mémoire vive, il faut d’abord les placer dans les registres.
+                      <br><br>
+                      Pour charger la valeur située à l’emplacement 36 de la mémoire:
+                    <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                      <pre>
+                        <code class="">
+                          LDR R0,36          
+                        </code></pre>
+                    
+                      </p>
 </div>
                 </div>
         
@@ -328,7 +344,95 @@ Pour charger la valeur située à l’emplacement 36 de la mémoire:
             </div>
           </div>
         </div>
+      </div><!--end row -->
+
+       <div class="section-title" data-aos="zoom-out">
+        <h2>Annexes</h2>
+
       </div>
+      <div class="section-title" data-aos="zoom-out">
+        <h3 id="liens">Liens</h3>
+
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Lien vers le simulateur ARM</h3>
+            <ul> 
+
+              <!-- <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li class="na">Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li> -->
+            </ul>
+
+
+            <div class="btn-wrap">
+              <a href="https://www.peterhigginson.co.uk/ARMlite/" class="btn-buy">Y aller</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Lien vers l'autre simulateur </h3>
+            <ul> Plus visuel
+
+              <!-- <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li class="na">Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li> -->
+            </ul>
+
+
+            <div class="btn-wrap">
+              <a href="https://www.peterhigginson.co.uk/AQA/" class="btn-buy">Y aller</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Lien vers le notebook</h3>
+            <ul> Sur Capytale
+
+              <!-- <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li class="na">Pharetra massa</li>
+              <li class="na">Massa ultricies mi</li> -->
+            </ul>
+
+
+            <div class="btn-wrap">
+              <a href="https://capytale2.ac-paris.fr/web/c/1f68-3842950" class="btn-buy">Y aller</a>
+            </div>
+          </div>
+        </div>
+
+ 
+        <div class="section-title" data-aos="zoom-out">
+          <h3 id="pj">Pièces jointes</h3>
+  
+        </div>
+
+      <div class="row">
+        
+
+        <div class="col-lg-3 col-md-6">
+          <div class="box" data-aos="zoom-in">
+            <h3>Le fichier du notebook </h3>
+            <ul>Utilisable avec jupyter que vous avez:
+              <li>sur l'ordi</li>
+            <li> ou dans Les
+              logiciels de la clé usb</li>
+
+
+            </ul>
+            <div class="btn-wrap">
+              <a target="_blank" href="ressources/Programmation en assembleur.zip" class="btn-buy">Télécharger</a>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
   </section><!-- End Annexes Section -->
   </main><!-- End #main -->
 
