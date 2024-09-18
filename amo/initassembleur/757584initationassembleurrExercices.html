@@ -136,90 +136,9 @@
             </p>
           </div>
         </div><!-- fin box warning-->
-        
-        <ul class="nav nav-tabs row d-flex">
-          <li class="nav-item col-3" data-aos="zoom-in">
-            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-              <i class="fa-solid fa-laptop"></i>
-              <h4 class="d-none d-lg-block">Langage machine</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-              <i class="fa-solid fa-laptop-code"></i>
-              <h4 class="d-none d-lg-block">Langage assembleur</h4>
-            </a>
-          </li>
+      
+       
           
-        </ul>
-
-        <div class="tab-content" data-aos="fade-up">
-          <div class="tab-pane active show" id="tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
-                  <h3>Langage machine</h3>
-<p class="justifier">Le processeur n’interprète que des signaux électriques représentés par:
-<ul><li><i class="ri-check-double-line"></i>
-  0 pas de courant électrique.</li>
-  <li><i class="ri-check-double-line"></i>1 passage de courant électrique.</li></ul><br>
-</p>
-<p class="justifier">
-  On parle de langage <b> binaire</b>. Il est difficile pour l’Homme d’écrire un programme directement en binaire.
-   On utilise alors des <b>symboles mnémoniques</b> qui représentent une instruction compréhensible par le CPU.</p>
-                 
-                
-                </div><!-- fin col-->
-                
-          </div><!--fin row-->
-          
-          </div><!-- fin tabpane-->
-          <div class="tab-pane" id="tab-2">
-            
-              <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                  <h3>Langage assembleur</h3>
-                  <p class="justifier">
-                    <ul>
-                        Le processeur peut:
-
-                    <li>additionner des nombres,</li>
-                    <li>comparer des nombres,</li>
-                    <li> charger une valeur depuis la mémoire,</li>
-                      <li> stocker une valeur en mémoire.</li>
-                        <li>Le code suivant ajoute $3+57$ et garde le résultat dans le registre R0.</li></ul>
-                        <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-                          <pre>
-                            <code class="">
-                              ADD R0,#3,#57
-                              HALT           
-                            </code></pre>
-                        </div>
-                        Le processeur ne peut manipuler que des nombres situés dans les registres (mémoires très rapides, avec des fréquences de fonctionnement similaires au processeur). Pour manipuler des données dans la mémoire vive, il faut d’abord les placer dans les registres.
-<br>
-Pour charger la valeur située à l’emplacement 36 de la mémoire:
-<div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-  <pre>
-    <code class="">
-      LDR R0,36          
-    </code></pre>
-</div>
-                </div>
-        
-            
-            
-            
-            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <div class="box notices cstyle warning">
-                  <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> À retenir</div>
-                  <div class="box-content">
-                    <p class="paddingside2 justifier">Chaque processeur possède son propre jeu d’instructions. Il n’est pas possible de les connaître par cœur. La documentation est donc un outil indispensable pour le programmeur.<br/>
-                    </p>
-                  </div>
-                </div><!-- fin box warning-->
-            </div>
-          </div>
-            </div>
-          </div>
           
 
       </div>
@@ -227,121 +146,82 @@ Pour charger la valeur située à l’emplacement 36 de la mémoire:
     <!-- End Resume Section -->
 
 
-
-    <!-- ======= Exercices Section ======= -->
-    <section id="exos" class="services">
+    <!-- ======= Annexes Section ======= -->
+    <section id="annexes" class="pricing">
       <div class="container">
-
         <div class="section-title" data-aos="zoom-out">
-          <h2>Exercices</h2>
-          <!-- <p> Exercices de révisions</p> -->
+          <h2>Annexes</h2>
+
         </div>
-<!-- 
+        <div class="section-title" data-aos="zoom-out">
+          <h3 id="liens">Liens</h3>
+
+        </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box" data-aos="zoom-in-left">
-              <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Les exercices du notebook</a></h4>
-              <p class="description"><a href="../../assets/pj/exercices-python-avec-reponse.zip"
-                  download="Acme Documentation (ver. 2.0.1).txt">Cliquez-ici pour les télécharger</a></p>
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Lien vers le simulateur ARM</h3>
+            
+
+              <div class="btn-wrap">
+                <a href="https://www.peterhigginson.co.uk/ARMlite/" class="btn-buy">Y aller</a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Le site ensi</a></h4>
-              <p class="description">Vous trouverez pleins <a href="https://e-nsi.gitlab.io/pratique/N0/">
-                  d'exercices</a> notamment ceux à <a href="https://e-nsi.gitlab.io/pratique/N1/">maitriser</a> pour le
-                bac</p>
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Lien vers l'autre simulateur </h3>
+              <ul> Plus visuel
+               </ul>
+
+
+              <div class="btn-wrap">
+                <a href="https://www.peterhigginson.co.uk/AQA/" class="btn-buy">Y aller</a>
+              </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Lien vers le notebook</h3>
+              <ul> Sur Capytale
 
-          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Apprendre en s'amusant avec Pyrates</h4>
-              <p class="description"><a href="https://py-rates.fr/">Cliquez-ici</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-              <h4 class="title">Parcours Castor</h4>
-              <p class="description"><a href="https://concours.castor-informatique.fr/">Cliquez-ici</a></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
-              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-              <h4 class="title">Parcours Algorea</h4>
-              <p class="description"><a href="https://parcours.algorea.org/contents/4703/">Cliquez-ici</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mt-5">
-            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
-              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Entrainement à la programmation France-IOI</a></h4>
-              <p class="description"><a href="http://www.france-ioi.org/">Cliquez-ici</a></p>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-    </section><!-- End Exercices Section -->
-
- 
-
-
-
-   <!-- ======= Annexes Section ======= -->
-   <section id="annexes" class="pricing">
-    <div class="container">
-
-      <div class="section-title" data-aos="zoom-out">
-        <h2>Annexes</h2>
-
-      </div>
-
-
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="box" data-aos="zoom-in">
-            <h3>Lien vers le notebook</h3>
-            <ul> Sur Capytale
-
-              <!-- <li>Nec feugiat nisl</li>
+                <!-- <li>Nec feugiat nisl</li>
               <li>Nulla at volutpat dola</li>
               <li class="na">Pharetra massa</li>
               <li class="na">Massa ultricies mi</li> -->
-            </ul>
+              </ul>
 
 
-            <div class="btn-wrap">
-              <a href="https://capytale2.ac-paris.fr/web/c/1f68-3842950" class="btn-buy">Y aller</a>
+              <div class="btn-wrap">
+                <a href="https://capytale2.ac-paris.fr/web/c/68a9-3957689" class="btn-buy">Y aller</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="box" data-aos="zoom-in">
-            <h3>Le fichier du notebook </h3>
-            <ul>Utilisable avec jupyter que vous avez:
-              <li>sur l'ordi</li>
-            <li> ou dans Les
-              logiciels de la clé usb</li>
 
 
-            </ul>
-            <div class="btn-wrap">
-              <a target="_blank" href="ressources/Programmation en assembleur.zip" class="btn-buy">Télécharger</a>
+          <div class="section-title" data-aos="zoom-out">
+            <h3 id="pj">Pièces jointes</h3>
+
+          </div>
+
+          <div class="row">
+
+
+            <div class="col-lg-3 col-md-6">
+              <div class="box" data-aos="zoom-in">
+                <h3>Le fichier du notebook </h3>
+                <ul>Utilisable avec jupyter</ul>
+
+
+                </ul>
+                <div class="btn-wrap">
+                  <a target="_blank" href="ressources/Exercices assembleur.zip" class="btn-buy">Télécharger</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-  </section><!-- End Annexes Section -->
+
+    </section><!-- End Annexes Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
