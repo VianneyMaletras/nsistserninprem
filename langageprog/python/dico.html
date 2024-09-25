@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Python - Specifications  et assertions</title>
+  <title>Python - Dictionnaires</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -89,7 +89,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Spécifications et assertions</h2>
+          <h2 class="animate__animated animate__fadeInDown">Les dictionnaires en python</h2>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -100,30 +100,7 @@
     <!-- Section programme officiel -->
     <section class="inner-page">
       <div class="container">
-        <h2> Programme officiel</h2>
-        <table>
-          <thead>
-            <th>
-              Contenus
-            </th>
-            <th class="padleft10px">
-              Capacités attendues
-            </th>
-            <!-- <th> Commentaires</th> -->
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="padleft10px">Modèle d’architecture séquentielle (von Neumann)</td>
-              <td class="padleft10px">Distinguer les rôles et les caractéristiques des différents constituants d’une
-                machine.
-                Dérouler l’exécution d’une séquence d’instructions simples du type langage machine.
-              </td>
-            </tr>
-
-            </tr>
-          </tbody>
-        </table>
+       
 
         <p>
 
@@ -137,127 +114,157 @@
         <ul class="nav nav-tabs row d-flex">
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
-              <i class="fa-solid fa-laptop"></i>
-              <h4 class="d-none d-lg-block">Spécifications</h4>
+              <i class="fa-solid fa-ear-listen"></i>
+              <h4 class="d-none d-lg-block">Les Dictionnaires</h4>
             </a>
           </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+      <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
               <i class="fa-solid fa-laptop-code"></i>
-              <h4 class="d-none d-lg-block">Assertions</h4>
+              <h4 class="d-none d-lg-block">Méthodes</h4>
             </a>
-          </li>
+          </li> 
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h4 class="d-none d-lg-block">Parcours</h4>
+            </a>
+          </li> 
 
         </ul>
 
         <div class="tab-content" data-aos="fade-up">
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 justifier">
                 <h3>Définition</h3>
-                <p class="justifier">De manière générale la spécification est un ensemble de d’exigences à satisfaire par un produit ou un service.
+                Un dictionnaire ressemble à un sac contenant des valeurs ayant chacune leur étiquettes
+<br> Ils permettent de faire des opérations très rapides.
+<br><br>
+<h3>Création</h3>
+ Variable = dict()<br>
+ Création par compréhension
+ <pre><code class="language-python">
+ {x:x**2 for x in range(10)}
+ # donne ceci :
+ {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+</code></pre>
+ <br><br>
+<h3>Ajout</h3>
+dictionnaire[clé] = valeur
 
-                  En programmation,<b> spécifier un programme revient à décrire explicitement ce qu’il doit faire et dans quelles conditions.</b> 
-                  
-              </div><!-- fin col-->
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="ressources/fibospecifie.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 order-2 order-lg-2 text-center">
+                <h3>Exemple</h3>
+               <img src="ressources/dicobag.jpg" alt="" class="img-fluid maxwidth50">
+
+               <pre><code class="language-python">
+                my_dict = {'key1':'value1','key2':'value2'}</code></pre>
               </div>
             </div><!--fin row-->
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
-                <h3> Spécification attendues dans une fonction : la documentation</h3>
-                <p class="justifier">
-                  La documentation (docstring) d’une fonction est une chaine de charactère sur plusieurs lignes.
-
-                  <ul>On y précise :
-                  <li>• Ce que fait la fonction de manière succincte </li>
-                  <li>• Les paramètres d’entrées et leur type : @param n: (int) l'indice... </li>
-                  <li>• La sortie et son type. Pas de sortie ? @return: (None) </li>
-                  <li>• Les conditions d’utilisation et effets de bord : @CU : La table</li> 
-                  <li>• Eventuellement des tests</li>
-                </ul> 
-                Pour accéder à la documentation on utilise la fonction help:
-	 help(nom_fonction)
-
-                </p>                  
-              </div><!-- fin col-->
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="ressources/fibospecifie.png" alt="" class="img-fluid">
-              </div>
-            </div><!--fin row-->
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
-                <h3> Spécification attendues dans une fonction : Variables explicites</h3>
-                <p class="justifier">
-                  
-On sépare les mots avec des soulignés (underscore touche 8): ma_fonction 
-Les noms de fonctions doivent décrire ce qu’elles font. 
-  
-• Les noms de variables doivent décrire les objets vers lesquels elles pointent
-
-
-                </p>                  
-              </div><!-- fin col-->
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-              </div>
-            </div><!--fin row-->
-            <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
-                <h3> Spécification attendues dans une fonction : Au niveau du programme</h3>
-                <p class="justifier">
-                  Vous devez être capable :
-- de dire si un code correspond à sa spécification
-- d’écrire le code de spécification d’une fonction
-- d’écrire le code d’une fonction à partir de spécification.
-
-                </ul> 
-                </p>                  
-              </div><!-- fin col-->
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-               
-              </div>
-            </div><!--fin row-->
-           
-
-          </div><!-- fin tabpane-->
+          </div>
           <div class="tab-pane" id="tab-2">
 
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>assertions</h3>
-                <p class="justifier">
+              <div class="row">
+                <div class="col-lg-12 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                  <h3></h3>
+                
+                <p class=" justifier">
+  
+                  Déclaration Variable = dict()
+
+                </p>
+                
+              </div>
+              </div>
+        
+           
+
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                    <h3>In</h3>
                   
-L’instruction assert de Python est <b>une aide au débogage qui teste une condition</b>.<br>
- Si la condition est vraie, cela ne fait rien et votre programme continue simplement à s’exécuter. <br>
- Mais si la condition d’assertion est fausse, elle lève une exception AssertionError avec un message d’erreur facultatif.
- <br><br>
+                  <p class=" justifier">
+                    Permet de vérifier si une <b>clé</b> est dans le dictionnaire.<br>
+                    Renvoie <b>True</b> ou <b>False</b>
+                  </p>
+                  
+                </div>
+                <div class="col-lg-6 order-2 order-lg-2 text-center">
+                  <h3>Exemples</h3>
+                 <img src="ressources/indico.png" alt="" class="img-fluid maxwidth50">
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                    <h3>Get</h3>
+                  
+                  <p class=" justifier">
+                    Cette méthode permet de vérifier si il existe une clé dans le dictionnaire et de donner une valeur par défaut si la clé n’existe pas. (ici 0) 
+                  </p>
+                  
+                </div>
+                <div class="col-lg-6 order-2 order-lg-2 text-center">
+                  <h3>Exemples</h3>
+                 <img src="ressources/get dico.png" alt="" class="img-fluid maxwidth50">
+                </div>
+                </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                    <h3>Version 1</h3>
+                  
+                  <p class=" justifier">
+                    Avec une boucle for 
 
-L’utilisation appropriée des assertions est d’informer les développeurs d’erreurs irrécupérables dans un programme. 
-
-Elles ne sont pas destinés à signaler les conditions d’erreur attendues tel qu’un « fichier introuvable », où un utilisateur peut prendre des mesures correctives pour palier au problème puis simplement réessayer d’appeler le programme.
-
-            
-              </p>
-<p><b>assert_stmt ::= "assert" expression1 ["," expression2] </b></p>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 ">
+                  </p>
+                </div>
+                <div class="col-lg-6 order-2 order-lg-2 text-center">
+                  <h3>Exemples</h3>
+                 <img src="ressources/fordicov1.png" alt="" class="img-fluid">
+                </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                    <h3>Version 2</h3>
+                  
+                  <p class=" justifier">
+                    Avec une boucle for
+                    Avec deux variables d’itération pour parcourir les paires de clé et valeur<br><br>
+Attention à chaque boucle la première variable est la clé et la seconde variable est la valeur correspondant à la c
+                  </p>
+                </div>
+                <div class="col-lg-6 order-2 order-lg-2 text-center">
+                  <h3>Exemples</h3>
+                 <img src="ressources/fordicov2.png" alt="" class="img-fluid maxwidth90">
+                </div>
+            </div><!-- fin row -->
+            <div class="row">
+              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                <h3>Itération sur les clés </h3>
+              
               <pre><code class="language-python">
-def appliquer_reduction(prix, reduction):
-    prix_reduit = prix - ( prix * reduction ) 
-    assert 0 <= prix_reduit <= prix
-    return prix_reduit 
-
-              </code></pre>
-              <p class=" justifier">
-                Ici  assert garantira que, quoi qu’il en soit, les prix réduits ne peuvent pas être inférieurs à 0 et ils ne peuvent pas être supérieurs au prix d’origine du produit.
-<br> python traduit notre assert ainsi
-              </p>
-              <img src="ressources/assert.png" alt="" class="img-fluid">
+for k in d.keys():
+print (k)</code></pre>
+<br><br>
+<h3>Itération sur les valeurs </h3>
+              
+<pre><code class="language-python">
+  for v in d.values():
+       print (v)</code></pre>
             </div>
-          </div><!-- fin row -->
-
-        </div>
+            <div class="col-lg-6 order-2 order-lg-2 text-center">
+              <h3>Itération sur les élements</h3>
+              <pre><code class="language-python">
+ for item in d.items():
+   print( item)</code></pre>
+              
+            </div>
+        </div><!-- fin row -->
+          </div><!-- fin tabpane-->
+ 
       </div>
       </div>
 
@@ -334,7 +341,7 @@ def appliquer_reduction(prix, reduction):
 
 
 
-    <!-- ======= <!-- ======= Annexes Section ======= -->
+    <!-- ======= Annexes Section ======= -->
     <section id="annexes" class="pricing">
       <div class="container">
         <div class="section-title" data-aos="zoom-out">
@@ -345,8 +352,7 @@ def appliquer_reduction(prix, reduction):
           <h3 id="liens">Liens</h3>
 
         </div>
-        
-        <div class="row">
+        <!-- <div class="row">
 
           <div class="col-lg-3 col-md-6">
             <div class="box" data-aos="zoom-in">
@@ -362,7 +368,8 @@ def appliquer_reduction(prix, reduction):
             </div>
           </div>
         </div>
-    
+     -->
+      
 
 
           <div class="section-title" data-aos="zoom-out">
