@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Python - Booléens</title>
+  <title>Python - Fonctions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -72,20 +72,7 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href=""><span>Python</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-             <li><a href="./5478pythonbases.html">Les bases</a></li>
-             <li><a href="fonctions.html">Les fonctions</a></li>
-             <li><a href="./specification_assertions.html">Specifications et assertions</a></li>
-             <li><a href="./boucles.html">Boucles</a></li>
-             <li><a href="./instructionscondit.html">Instructions conditionnelles</a></li>
-             <li><a href="./booleens.html">Booléens</a></li>
-             <li><a href="./dico.html">Dictionnaires</a></li>
-             <li><a href="./strings.html">String</a></li>
-             <li><a href="./tuples.html">Tuple</a></li>
- 
-           </ul> 
-         </li>
+
           <!-- <li><a class="nav-link scrollto" href="#exos">Exercices</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -102,7 +89,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Les booléens</h2>
+          <h2 class="animate__animated animate__fadeInDown">Fonctions</h2>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -151,35 +138,60 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-ear-listen"></i>
-              <h4 class="d-none d-lg-block">Les booléens</h4>
+              <h4 class="d-none d-lg-block">Définition</h4>
             </a>
           </li>
-          <!-- <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
               <i class="fa-solid fa-laptop-code"></i>
-              <h4 class="d-none d-lg-block">Boucle non bornée</h4>
+              <h4 class="d-none d-lg-block">Print vs return</h4>
             </a>
-          </li> -->
+          </li>
 
         </ul>
 
         <div class="tab-content" data-aos="fade-up">
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 justifier">
+              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
                 <h3>Définition</h3>
-               Un booléen est une variable qui ne peut prendre que 2 valeurs : "False" et "True", habituellement noté 0 et 1.
-              </div>
-              <div class="col-lg-6 order-2 order-lg-2 text-center">
-                <h3>Exemples</h3>
-               <img src="ressources/boolexemple.png" alt="" class="img-fluid">
+                <p class="justifier">Dans python une fonction est comme un sous-programme pour lequel on entre 0, 1 ou
+                  plusieurs paramètres qui peut faire une action et retourner une ou plusieurs valeurs
+
+
+              </div><!-- fin col-->
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="ressources/fonctionsavoir.png" alt="" class="img-fluid">
               </div>
             </div><!--fin row-->
 
           </div><!-- fin tabpane-->
           <div class="tab-pane" id="tab-2">
 
-         
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Print vs return</h3>
+                <p class="justifier">
+                  <b>Return ne change pas le type de la variable</b> (Sauf modification dans le sous programme). <br>
+                  Si on doit utiliser la sortie d’un sous-programme dans de nouveaux calculs, il faut utiliser return,
+                  mais si ce n’est pas le cas on peut aussi utiliser print.
+                  <br> En règle général on va utiliser <b>return</b> à la fin d'une fonction et on utilisera
+                  <b>print</b> a l'extérieur
+
+            
+              </p>
+
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="ressources/printvsreturn.png" alt="" class="img-fluid">
+              <p class=" justifier">
+
+                Avec print ce qui est affiché n’est pas considéré comme un nombre contrairement à return. 
+
+              </p>
+              <img src="ressources/printvsreturnresult.png" alt="" class="img-fluid">
+            </div>
+          </div><!-- fin row -->
 
         </div>
       </div>
@@ -256,48 +268,44 @@
 
 
 
+<!-- ======= Annexes Section ======= -->
+<section id="annexes" class="pricing">
+  <div class="container">
+    <div class="section-title" data-aos="zoom-out">
+      <h2>Annexes</h2>
 
+    </div>
+    <div class="section-title" data-aos="zoom-out">
+      <h3 id="liens">Liens</h3>
 
-    <!-- ======= Annexes Section ======= -->
-    <section id="annexes" class="pricing">
-      <div class="container">
-        <div class="section-title" data-aos="zoom-out">
-          <h2>Annexes</h2>
-
-        </div>
-        <div class="section-title" data-aos="zoom-out">
-          <h3 id="liens">Liens</h3>
-
-        </div>
-        <!-- <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="box" data-aos="zoom-in">
-              <h3>Lien vers le notebook</h3>
-              <ul> Sur Capytale
+    </div>
     
-              </ul>
-    
-    
-              <div class="btn-wrap">
-                <a href="" class="btn-buy">Y aller</a>
-              </div>
-            </div>
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="zoom-in">
+          <h3>Lien vers le notebook</h3>
+          <ul> Sur Capytale
+
+          </ul>
+
+
+          <div class="btn-wrap">
+            <a href="" class="btn-buy">Y aller</a>
           </div>
         </div>
-     -->
-      
+      </div>
+    </div>
 
+      <div class="section-title" data-aos="zoom-out">
+        <h3 id="pj">Pièces jointes</h3>
 
-          <div class="section-title" data-aos="zoom-out">
-            <h3 id="pj">Pièces jointes</h3>
+      </div>
 
-          </div>
+    
+    </div>
 
-        
-        </div>
-
-    </section><!-- End Annexes Section -->
+</section><!-- End Annexes Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
