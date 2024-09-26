@@ -89,7 +89,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Fonctions</h2>
+          <h2 class="animate__animated animate__fadeInDown">EDI environnement de développement intégré</h2>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -99,7 +99,7 @@
   <main id="main">
     <!-- Section programme officiel -->
     <section class="inner-page">
-      <div class="container">
+      <!-- <div class="container">
         <h2> Programme officiel</h2>
         <table>
           <thead>
@@ -109,7 +109,7 @@
             <th class="padleft10px">
               Capacités attendues
             </th>
-            <!-- <th> Commentaires</th> -->
+          <th> Commentaires</th> 
           </thead>
           <tbody>
 
@@ -128,7 +128,7 @@
         <p>
 
         </p>
-      </div>
+      </div> -->
     </section><!-- End carousel -->
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="features">
@@ -138,67 +138,250 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-ear-listen"></i>
-              <h4 class="d-none d-lg-block">Définition</h4>
+              <h4 class="d-none d-lg-block">Activité 1</h4>
             </a>
           </li>
           <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
             <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
               <i class="fa-solid fa-laptop-code"></i>
-              <h4 class="d-none d-lg-block">Print vs return</h4>
+              <h4 class="d-none d-lg-block">Activité 2</h4>
             </a>
           </li>
-
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h4 class="d-none d-lg-block">Activité 3</h4>
+            </a>
+          </li>
         </ul>
 
         <div class="tab-content" data-aos="fade-up">
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
               <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
-                <h3>Définition</h3>
-                <p class="justifier">Dans python une fonction est comme un sous-programme pour lequel on entre 0, 1 ou
-                  plusieurs paramètres qui peut faire une action et retourner une ou plusieurs valeurs
+                <div class="box notices cstyle warning">
+                  <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> À retenir</div>
+                  <div class="box-content">
+                    <p class="paddingside2 justifier">Python est un <b>langage interprété</b>: le code source est lu et
+                      exécuté par un outil installé sur la machine: <b>l’interpréteur</b></li>
+                      </ul>
+                  </div>
+                </div><!-- fin warning-->
+                1. Ouvrez une console python
+                <br>
+                <div class="box notices cstyle warning">
+                  <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> À retenir</div>
+                  <div class="box-content">
+                    <p class="paddingside2 justifier"><b>>>></b> est l’invite de commandes. Ce signe indique que
+                      l’interpréteur attend que l’utilisateur entre une instruction. Tant qu’une invite de commandes
+                      n’est pas disponible dans la console, c’est que l’interpréteur est en train de lire et exécuter du
+                      code.
 
-
+                      <br><b> Il ne faut pas recopier ce signe quand on écrit une instruction.</b>
+                    </p>
+                    </ul>
+                  </div>
+                </div><!-- fin warning-->
               </div><!-- fin col-->
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="ressources/fonctionsavoir.png" alt="" class="img-fluid">
+                <img src="ressource/pythonconsole.png" alt="" class="img-fluid">
               </div>
             </div><!--fin row-->
+            <div class="row">
+              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 text-center">
+                1. Écrire les expressions suivantes puis valider. Observer les résultats obtenus.
+                <br>
+                <div
+                  class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                  <pre>
+                    <code class="langage-python"> 
+>>> 3+4
+                </code></pre>
+                </div>
+                <br>
+                <div
+                  class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                  <pre>
+                    <code class="langage-python">
+>>> 3<4
+                  </code>
+                </pre>
+                </div>
+                <details>
+                  <summary> <b>Cliquez ici pour afficher la solution</b> </summary>
+                  <div
+                    class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                    <pre>
+        <code class="langage-python">
+      >>> 3+4
+      7
+        </code></pre>
+                  </div>
+                  <br>
+                  <div
+                    class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                    <pre>
+                          <code class="langage-python">
+      >>> 3<4
+      True
+      </code></pre>
+                  </div>
+                </details>
+                <div class="box notices cstyle note boxcontentobservation">
+                  <div class="box-label boxbglabelobservation">
+                    <i class="fa-fw fas fa-exclamation-circle"></i> Observation
+                  </div>
+                  <div class="box-content ">
+                    <p class="paddingside2"><b>L’invite de commandes</b> indique que l’utilisateur a la main pour écrire
+                      du code. L’interpréteur interprète le code et affiche le résultat à la ligne.</p>
+                  </div>
+                </div>
+              </div><!-- fin col-->
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+
+              </div>
+            </div><!--fin row-->
+
 
           </div><!-- fin tabpane-->
           <div class="tab-pane" id="tab-2">
 
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Print vs return</h3>
+                <h3>Activité 2</h3>
                 <p class="justifier">
-                  <b>Return ne change pas le type de la variable</b> (Sauf modification dans le sous programme). <br>
-                  Si on doit utiliser la sortie d’un sous-programme dans de nouveaux calculs, il faut utiliser return,
-                  mais si ce n’est pas le cas on peut aussi utiliser print.
-                  <br> En règle général on va utiliser <b>return</b> à la fin d'une fonction et on utilisera
-                  <b>print</b> a l'extérieur
 
-            
-              </p>
+                  Pour écrire plusieurs lignes de code, on utilisera plutôt un Environnement de Développement Intégré.
+                  Il se chargera d’envoyer toutes les lignes de code à l’interpréteur.
+                  De plus, il sera possible d’enregistrer le programme dans un fichier.
+                <ul>Il existe de nombreux EDI:
+                  <li>Thonny,</li>
+                  <li>Spyder,</li>
+                  <li>Pyzo,</li>
+                  <li>VsCode</li>
+                  <li>...</li>
+                </ul>
+                <ol>
+                  <li>Créer le répertoire NSI/langages/tplang.</li>
+                  <li>Ouvrir l’EDI </li>
+                  <li>Vérifier le comportement de l’interpréteur en évaluant les expressions:</li>
+
+                </ol>
+                <div
+                  class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                  <pre>
+  <code class="langage-python">
+>>> 3+4
+</code></pre>
+                  <pre>
+  <code class="langage-python">
+>>> 3<4
+</code></pre>
+                </div>
+                <ol start="5">
+                  <li>Créer un nouveau document et l’enregistrer sous le nom test.py, dans le répertoire tplang.</li>
+                  <li>Entrer le code dans l’éditeur:</li>
+                </ol>
+                <div
+                  class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                  <pre> <code class="langage-python">
+    nom = input("Votre nom? ")
+    print("Bonjour", nom)
+</code></pre>
+                </div>
+
+                <ol start="6">
+                  <li>Enregistrer puis exécuter le programme en cliquant sur l’icône lecture ou bien en appuyant sur la
+                    touche F5.</li>
+                </ol>
+                </p>
+                <p class="justifier">
+                <div class="box notices cstyle note boxcontentobservation">
+                  <div class="box-label boxbglabelobservation">
+                    <i class="fa-fw fas fa-exclamation-circle"></i> Information
+                  </div>
+                  <div class="box-content ">
+                    <p class="paddingside2">
+                      Le programme est interprété par la console. Cette dernière attend que l’utilisateur entre un mot
+                      puis valide. On remarque que l’invite de commandes n’est pas disponible à cet instant: le
+                      programme est toujours en cours d’exécution. Elle affiche ensuite un message puis rend la main.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="box notices cstyle warning">
+                  <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> À retenir</div>
+                  <div class="box-content">
+                    <p class="paddingside2 justifier">
+                      Un code peut être commenté:
+                      <code class="langage-python">
+          # Attend une réponse de l'utilisateur
+          nom = input("Votre nom? ")
+          # Affiche la réponse
+          print("Bonjour", nom)
+      </code></pre>
+
+                      Une ligne qui commence par # n’est pas lue par l’interpréteur. C’est un commentaire pour le
+                      développeur
+                    </p>
+                  </div>
+                </div><!-- fin warning-->
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="ressource/thonny.png" alt="" class="img-fluid">
+              </div>
+              </div><!-- fin row -->
 
             </div>
-            <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="ressources/printvsreturn.png" alt="" class="img-fluid">
-              <p class=" justifier">
+            <div class="tab-pane" id="tab-3">
 
-                Avec print ce qui est affiché n’est pas considéré comme un nombre contrairement à return. 
+              <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                  <h3>Dans votre IDE:</h3>
 
-              </p>
-              <img src="ressources/printvsreturnresult.png" alt="" class="img-fluid">
+                  <ol>
+                    <li>Se rendre dans Outils/Gérer les plugins.</li>
+                    <li>Dans la barre de rechercher, écrire thonny-black-formatter.</li>
+                    <li>Installer le plugin.</li>
+                    <li>Redémarrer Thonny.</li>
+                    <li>Coller le code suivant dans le fichier Python précédent:</li>
+                  </ol>
+                  <div
+                    class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                    <pre>
+  <code class="langage-python">
+    nom=input ("Votre nom? ")
+    print ("Bonjour",nom)
+    while nom!="superman":
+        nom=input ("Votre nom? ")
+</code></pre>
+<ol start="6">
+  <li>Se rendre dans Outils/Format with black.</li>
+</ol>
+
+                  </div>
+
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 justifier">
+                  <details>
+                    <summary> <b>Cliquez ici pour afficher la solution</b> </summary>
+                    <div>
+                      <ul>
+                        <li>Le code est formaté:</li>
+
+                        <li>des espaces ont été ajoutés autour des = pour aérer le code.</li>
+                        <li>des espaces ont été retirés après input et print.</li>
+                      </ul>
+                    </div>
+                  </details>
+                </div><!-- fin row -->
+              </div>
             </div>
-          </div><!-- fin row -->
-
-        </div>
-      </div>
-      </div>
+          </div>
 
 
-      </div>
+
     </section>
     <!-- End Resume Section -->
 
@@ -268,44 +451,44 @@
 
 
 
-<!-- ======= Annexes Section ======= -->
-<section id="annexes" class="pricing">
-  <div class="container">
-    <div class="section-title" data-aos="zoom-out">
-      <h2>Annexes</h2>
+    <!-- ======= Annexes Section ======= -->
+    <section id="annexes" class="pricing">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Annexes</h2>
 
-    </div>
-    <div class="section-title" data-aos="zoom-out">
-      <h3 id="liens">Liens</h3>
+        </div>
+        <div class="section-title" data-aos="zoom-out">
+          <h3 id="liens">Liens</h3>
 
-    </div>
-    
-    <div class="row">
+        </div>
 
-      <div class="col-lg-3 col-md-6">
-        <div class="box" data-aos="zoom-in">
-          <h3>Lien vers le notebook</h3>
-          <ul> Sur Capytale
+        <div class="row">
 
-          </ul>
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Lien vers le notebook</h3>
+              <ul> Sur Capytale
+
+              </ul>
 
 
-          <div class="btn-wrap">
-            <a href="" class="btn-buy">Y aller</a>
+              <div class="btn-wrap">
+                <a href="" class="btn-buy">Y aller</a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="section-title" data-aos="zoom-out">
+          <h3 id="pj">Pièces jointes</h3>
+
+        </div>
+
+
       </div>
-    </div>
 
-      <div class="section-title" data-aos="zoom-out">
-        <h3 id="pj">Pièces jointes</h3>
-
-      </div>
-
-    
-    </div>
-
-</section><!-- End Annexes Section -->
+    </section><!-- End Annexes Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
