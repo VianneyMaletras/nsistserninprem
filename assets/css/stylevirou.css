@@ -106,7 +106,16 @@ code{
         padding: 0;
     
 }
+.examlisteinside{
+    list-style: inside!important;
+    padding: 0;
 
+}
+.examlisteoutside{
+    list-style: outside!important;
+    padding: 0;
+
+}
 .maxwidth50 {
     max-width: 50%;
 }
