@@ -122,3 +122,26 @@ code{
 .maxwidth90{
     max-width: 90%;
 }
+
+
+.tablevirou {
+    border: 1px solid rgba( 134, 134, 134, .333 );
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    table-layout: auto;
+}
+
+.tablevirou > th,
+thead td {
+    background-color: rgba( 134, 134, 134, .166 );
+    border: 1px solid rgba( 134, 134, 134, .333 );
+    padding: 0.5rem;
+}
+
+.tablevirou> td {
+    border: 1px solid rgba( 134, 134, 134, .333 );
+    padding: 0.5rem;
+}
+.tablevirou>  tbody > tr:nth-child(even) > td {
+    background-color: rgba( 134, 134, 134, .045 );
+}
