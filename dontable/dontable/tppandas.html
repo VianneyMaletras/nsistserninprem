@@ -62,9 +62,15 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
-       
+          <li class="dropdown"><a href="#"><span> Les données</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href=".importerdesdonnees.html">Importer des données</a></li>
+              <li><a href="./importerdesdonnees.html#exos">Exercices CSV</a></li>
+              <li><a href="./TpPandas.html">Tp pandas</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto" href="#resume">Résumé du cours</a></li>
-          <li><a class="nav-link scrollto" href="#exos">Exercices</a></li> 
+          <li><a class="nav-link scrollto" href="./importerdesdonnees.html#exos">Exercices</a></li> 
 
           <li class="dropdown"><a href="#"><span>Annexes</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -90,7 +96,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Import de données. </h2>
+          <h2 class="animate__animated animate__fadeInDown">TP Pandas </h2>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -139,73 +145,46 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-chart-diagram"></i>
-              <h4 class="d-none d-lg-block">Données en table</h4>
+              <h4 class="d-none d-lg-block">La bibliothèque pandas</h4>
             </a>
           </li>
-          <li class="nav-item col-3" data-aos="zoom-in">
+          <!-- <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link  show" data-bs-toggle="tab" href="#tab-2">
               <i class="fa-solid fa-code"></i>
-              <h4 class="d-none d-lg-block">Implémentation en Python</h4>
+              <h4 class="d-none d-lg-block">Manipuler des fichiers simples</h4>
             </a>
           </li>
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link  show" data-bs-toggle="tab" href="#tab-3">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <h4 class="d-none d-lg-block">Concepts clés abordés</h4>
+              <h4 class="d-none d-lg-block">manipuler des fichiers complexes</h4>
             </a>
-          </li>
+          </li> -->
         </ul>
 
         <div class="tab-content" data-aos="fade-up">
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 justifier">
-             
-                    <p class="paddingside2 justifier">
-                      Stocker une grande quantité de données brutes dans un fichier texte est une pratique courante. Les données sont ensuite analysées à l’aide d’un programme informatique.
-
-
-
-
-
-
-                     <ul class=" examlisteinside">
-                      Les tâches d’un programmeur consistent à:
-
-                        <li>importer les données dans un programme,</li>
-                        <li>valider l’intégrité des données,</li>
-                        <li>manipuler ces données pour en tirer une information.</li>
-                     </ul>
-
-                    </p>
-                
-             
+              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0 justifier">            
 
                     <div class="box notices cstyle warning">
                       <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> Attention !</div>
                       <div class="box-content">
                         <p class="paddingside2 justifier">
-                          Les données sont généralement stockées dans des fichiers textes structurés. On peut citer les formats <b>csv, json…</b>
+                          Pandas est une bibliothèque Python utilisée pour analyser les données.  
                         </p>
                       </div>
                     </div><!-- fin box warning-->
-              
+              <img src="./ressources/Pandas_logo.svg"/>
               </div><!-- fin col-->
               <div class="col-lg-6 order-2 order-lg-2 justifier">
                 <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
                
                   <pre>
-                    <code class="langage-python"> import csv
+                    <code class="langage-python">   import pandas as pd
 
-# ouvrir le fichier
-fichier = open("eleves.csv", "r", encoding="utf8")
-
-lecteur = csv.reader(fichier)
-for ligne in lecteur:
-    print(ligne)
-
-# libérer le fichier
-fichier.close()
+ # Lecture
+ df=pd.read_csv("NOM_FICHIER.csv", sep=";")  
                     </code></pre>
                 </div>
                 
@@ -222,34 +201,8 @@ fichier.close()
     </section>
     <!-- End Resume Section -->
 
-<!-- Exos  Section -->
-<section id="exos" class="services">
-  <div class="container">
 
-    <div class="section-title" data-aos="zoom-out">
-      <h2>Exercices</h2>
-    
-    </div>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="icon-box" data-aos="zoom-in-left">
-          <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-          <h4 class="title"><a href="">Les exercices du notebook</a></h4>
-          <p class="description"><a href="https://capytale2.ac-paris.fr/web/c/6b51-5645336"  >Y Aller</a></p>
-        </div>
-      </div>
-      <!-- <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-        <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
-          <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-          <h4 class="title"><a href="">Le site ensi </a></h4>
-          <p class="description"><a href="https://e-nsi.gitlab.io/pratique/N1/110-maximum_nombres/sujet/"  >Maximum - Y Aller</a></p>  </div>
-          <p class="description"><a href="https://e-nsi.gitlab.io/pratique/N1/100-ind_min/sujet/"  >Minimum - Y Aller</a></p>  </div>
-      </div> -->
-
-    </div>
-
-  </div>
 </section><!-- End exos  Section -->
     <!-- ======= Annexes Section ======= -->
     <section id="annexes" class="pricing">
@@ -278,6 +231,20 @@ fichier.close()
             </div>
           </div> 
           
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>Tutoriel pandas</h3>
+              <ul> Sur W3C
+              </ul>
+
+
+              <div class="btn-wrap">
+                <a href="https://www.w3schools.com/python/pandas/default.asp" class="btn-buy">Y aller</a>
+              </div>
+            </div>
+          </div> 
+          
+          
 
           
 
@@ -291,26 +258,39 @@ fichier.close()
 
          <div class="col-lg-3 col-md-6">
               <div class="box" data-aos="zoom-in">
-                <h3>L'annexe pour le cours </h3>
+                <h3>L'annexe ident </h3>
                 <ul>en zip</ul>
 
 
                 </ul>
                 <div class="btn-wrap">
-                  <a target="_blank" href="ressources/eleves.zip" class="btn-buy">Télécharger</a>
+                  <a target="_blank" href="ressources/ident.zip" class="btn-buy">Télécharger</a>
                 </div>
               </div>
             </div>
-          </div> 
+          
           <div class="col-lg-3 col-md-6">
             <div class="box" data-aos="zoom-in">
-              <h3>L'annexe pour les exercices </h3>
+              <h3>L'annexe villes </h3>
               <ul>en zip</ul>
 
 
               </ul>
               <div class="btn-wrap">
-                <a target="_blank" href="ressources/exercices-table.zip" class="btn-buy">Télécharger</a>
+                <a target="_blank" href="ressources/villes.zip" class="btn-buy">Télécharger</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-lg-3 col-md-6">
+            <div class="box" data-aos="zoom-in">
+              <h3>L'annexe fichier clients </h3>
+              <ul>en zip</ul>
+
+
+              </ul>
+              <div class="btn-wrap">
+                <a target="_blank" href="ressources/fiches_client.zip" class="btn-buy">Télécharger</a>
               </div>
             </div>
           </div>
