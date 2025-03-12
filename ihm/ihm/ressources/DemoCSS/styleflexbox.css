@@ -1,0 +1,47 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 20px;
+    margin: 10px;
+    background: aqua;
+    border: 2px solid black;
+    flex: 1; /* Pour que les articles aient la même taille */
+  }
+  
+  section {
+    display: flex;
+    border: 3px solid red;
+    margin: 20px;
+    padding: 10px;
+  }
+  /* Add your flexbox CSS below here */
+.flexdirectionColumn{
+      flex-direction: column;
+}
+.flexdirectionrow{
+    flex-direction: row;
+}
+.flexdirectionrowreverse{
+    flex-direction: row-reverse;
+}
+.flexdirectioncolumnreverse{
+    flex-direction: column-reverse;
+}

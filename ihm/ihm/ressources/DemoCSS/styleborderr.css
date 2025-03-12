@@ -1,0 +1,100 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: purple;
+    height: 100px;
+}
+div{
+    display: block;
+}   
+.h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+
+.borderdashed {
+    border-style: dashed;
+    border-color:purple
+
+}
+
+.textaligncenter {
+    text-align: center;
+}
+
+.textalignright {
+    text-align: right;
+}
+
+.textalignleft {
+    text-align: left;
+}
+
+.verticalaligncenter {
+    text-align: center;
+}
+
+.verticalalignright {
+    text-align: right;
+}
+
+.verticalalignleft {
+    text-align: left;
+}
+
+
+.border {
+    
+    border-width: 3px;
+    height: 150px;
+    width: 150px;
+    margin: 3px;
+    float: left
+}
+.width3000100{
+height: 350px;
+    width: 100%;
+}
+.borderdouble {
+    border-style: double;
+    border-color: red;
+
+}
+.bordersolid {
+    border-style: solid;
+    border-color: black;
+
+}
+.container {
+    margin-top: 5px;
+    border-spacing: 5px;
+    width: 49%;
+    height: 250px;
+}
+.margin5{
+    margin:5% ;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+
+}
+.spacing5{
+    padding:5%
+}
+.spacing10{
+   padding:10%
+}
+.defaultexample{
+align-items: center;
+display: flex;
+justify-content: center;
+}
