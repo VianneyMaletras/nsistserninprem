@@ -90,7 +90,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Trier des cartes</h2>
+          <h2 class="animate__animated animate__fadeInDown">TP pokémon</h2>
           <p>Algorithmique</p>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
@@ -137,15 +137,10 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-bars-staggered"></i>
-              <h4 class="d-none d-lg-block">Tri par sélection              </h4>
+              <h4 class="d-none d-lg-block">Présentation              </h4>
             </a>
           </li>
-          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
-            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
-              <i class="fa-solid fa-repeat"></i>
-              <h4 class="d-none d-lg-block">Tri par insertion</h4>
-            </a>
-          </li>
+         
           
         </ul>
 
@@ -154,101 +149,20 @@
             <div class="row">
               <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0">
                   <p class="paddingside2">
-                    <ul class="examlisteinside">Pour chaque carte du tas:
-                      <li>Trouver la plus petite carte dans la partie non triée.</li>
-                      <li>Échanger cette carte avec la première de la partie non triée.</li>
+                    <ul class="examlisteinside">Compétences travaillées dans le TP:
+                      <li>Utilisation d’un fichier de données externes.</li>
+                      <li>Utilisation d’une bibliothèque graphique.</li>
+                      <li>Algorithme de tris</li>
                     
                     </ul> </p>
                </div>
-                    <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                    <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-                  
-                      <pre>
-                        <code class="langage-python">def indice_mini(tab: list, dep: int) -> int:
-  """
-  recherche d'indice minimum dans un tableau
-  """
-  i_mini = dep
-  mini = tab[dep]
-  for i in range(dep, len(tab)):
-      if tab[i] < mini:
-          i_mini = i
-          mini = tab[i]
-  return i_mini
-                      
-                      
-def echanger(tab: list, i: int, j: int) -> None:
-  """
-  échange de 2 valeurs dans un tableau
-  """
-  temp = tab[i]
-  tab[i] = tab[j]
-  tab[j] = temp
-                      
-def tri_selection(tab: list) -> None:
-  """
-  traduction de l'algorithme de tri par sélection
-  """
-  for i in range(len(tab)):
-      i_mini = indice_mini(tab, i)
-      echanger(tab, i, i_mini)
-                            </code></pre>
-                    </div>
-                  </div>
+                    
           </div><!--fin row-->
           
        
          
           </div><!-- fin tabpane-->
-          <div class="tab-pane" id="tab-2">
-            
-                <div class="row">
-                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0">
-                      <p class="paddingside2">
-                        <ul class="examlisteinside">Pour chaque carte du tas:
-                          <li>Tant que la carte précédente est plus petite : </li>
-                          <li>&nbsp;&nbsp;&nbsp; &nbsp;- Échanger cette carte avec la carte en cours.</li>
-                        
-                        </ul> </p>
-                   </div>
-                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                        <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
-                      
-                          <pre>
-                            <code class="langage-python">def inserer(tab: list, j: int) -> None:
-    """
-    insertion d'un élément dans la partie triée du tableau
-    """
-    while j-1 >= 0 and tab[j-1] > tab[j]:
-        echanger(tab, j-1, j)
-        j = j-1
-
-def echanger(tab: list, i: int, j: int) -> None:
-    """
-    échange de 2 valeurs dans un tableau
-    """
-    temp = tab[i]
-    tab[i] = tab[j]
-    tab[j] = temp
-
-def tri_insertion(tab: list) -> None:
-    """
-    traduction de l'algorithme de tri par insertion
-    """
-    for i in range(len(tab)):
-        inserer(tab, i)
-                                </code></pre>
-                        </div>
-                      </div>
-              </div><!--fin row-->
-              
-                
-                
-
-          </div><!-- fin tabpane 2-->
-          <p class="justifier">
-            Il s’agit de deux algorithmes de coût <b>quadratique</b>.
-          </p>
+       
             </div><!-- fin tabcontent-->
           </div><!-- fin container-->
           
@@ -306,40 +220,19 @@ def tri_insertion(tab: list) -> None:
           <ul> Sur Capytale
           </ul>
 
-
           <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/a942-6243512" class="btn-buy">Y aller</a>
+            <a href="https://capytale2.ac-paris.fr/web/c/4fb9-6375507" class="btn-buy">Y aller</a>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="box" data-aos="zoom-in">
-          <h3>Notebook de révision</h3>
-          <ul> Tri par séléction
-          </ul>
-          <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/4c22-6065419" class="btn-buy">Y aller</a>
-          </div>
-        </div>
-    </div>
-        <div class="col-lg-3 col-md-6">
-        <div class="box" data-aos="zoom-in">
-          <h3>Notebook de révision</h3>
-          <ul> Tri par insertion
-          </ul>
-
-
-          <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/174b-6065502" class="btn-buy">Y aller</a>
-          </div>
-        </div>
-      </div>
 
       <div class="section-title" data-aos="zoom-out">
         <h3 id="pj">Pièces jointes</h3>
+
       </div>
 
     <div class="row">
+      
+
       <div class="col-lg-3 col-md-6">
         <!-- <div class="box" data-aos="zoom-in">
           <h3>Le fichier du notebook </h3>
@@ -348,14 +241,14 @@ def tri_insertion(tab: list) -> None:
             <a target="_blank" href="ressource/TP.zip" class="btn-buy">Télécharger</a>
           </div>
         </div>
-      </div>
+      </div>-->
       <div class="box" data-aos="zoom-in">
         <h3>Le code  </h3>
-        <ul>Pour démarrer        </ul>
+        <ul>     </ul>
         <div class="btn-wrap">
-          <a target="_blank" href="ressource/TPbanque.zip" class="btn-buy">Télécharger</a>
+          <a target="_blank" href="ressources/pokemon-annexe.zip" class="btn-buy">Télécharger</a>
         </div>
-      </div> -->
+      </div> 
     </div>
     </div>
 
