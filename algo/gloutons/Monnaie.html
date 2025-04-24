@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Tri cartes</title>
+  <title>Gloutons</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,12 +56,10 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Tris</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Algorithme gloutons</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="./tricartes.html">Tris</a></li>
-              <li><a href="./tricartes.html#exos">Exercices sur les tris</a></li>
-              <li><a href="./tpcrepier.html">Tp le crêpier</a></li>
-              <li><a href="./tppoke.html">Tp Pokémeon</a></li>
+              <li><a href="./Monnaie.html">Rendue de monnaie</a></li>
+        
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#resume">Résumé du cours</a></li>
@@ -90,8 +88,8 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">TP pokémon</h2>
-          <p>Algorithmique</p>
+          <h2 class="animate__animated animate__fadeInDown">Rendu de Monnaie</h2>
+          <p>Algorithme gloutons</p>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -137,32 +135,82 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-bars-staggered"></i>
-              <h4 class="d-none d-lg-block">Présentation              </h4>
+              <h4 class="d-none d-lg-block">Recherche classique             </h4>
             </a>
           </li>
-         
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="fa-solid fa-repeat"></i>
+              <h4 class="d-none d-lg-block">Dichotomie</h4>
+            </a>
+          </li>
           
         </ul>
 
         <div class="tab-content" data-aos="fade-up">
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
-              <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0">
-                  <p class="paddingside2">
-                    <ul class="examlisteinside">Compétences travaillées dans le TP:
-                      <li>Utilisation d’un fichier de données externes.</li>
-                      <li>Utilisation d’une bibliothèque graphique.</li>
-                      <li>Algorithme de tris</li>
-                    
-                    </ul> </p>
-               </div>
-                    
+              <div class="col-lg-8 order-1 order-lg-1 mt-3 mt-lg-0">
+
+                    <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                  
+                      <pre>
+                        <code class="langage-python">def recherche_classique(tab: list, cherche: int) -> bool:
+   for element in tab:
+       if element == cherche:
+           return True
+   # à la fin de la boucle on n'a pas trouvé 'cherche'
+   return False
+                            </code></pre>
+                    </div>
+                  </div>
           </div><!--fin row-->
           
        
          
           </div><!-- fin tabpane-->
-       
+          <div class="tab-pane" id="tab-2">
+            
+                <div class="row">
+                  <div class="col-lg-6 order-1 order-lg-1 mt-3 mt-lg-0">
+                      <p class="paddingside2">
+                        <ul class="examlisteinside">Les données étant triées, l’algorithme de la <b>dichotomie</b>, pour chercher la présence d’un élément, consiste à:
+
+                          <li>couper le tableau en deux parties égales,</li>
+                          <li>ne garder que la partie contenant l’élément,</li>
+                          <li>répéter l’opération jusqu’à trouver l’élément ou bien avoir une partie vide</li>
+                        </ul> </p>
+                   </div>
+                        <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                        <div class=" theme-atom-one-dark shadow-3xl text-sm relative overflow-hidden max-w-full tab-size h-full">
+                      
+                          <pre>
+                            <code class="langage-python">def recherche_dicho(tab: list, cherche: int) -> bool:
+   i_debut = 0
+   i_fin = len(tab)-1
+
+   while i_fin >= i_debut:
+       i_milieu = (i_debut+i_fin) // 2
+       if cherche == tab[i_milieu]:
+           return True
+       elif cherche < tab[i_milieu]:
+           i_fin = i_milieu-1
+       else:  # cherche > tab[i_milieu]
+           i_debut = i_milieu+1
+
+   # à la fin de la boucle on n'a pas trouvé 'cherche'
+   return False
+                        </div>
+                      </div>
+              </div><!--fin row-->
+              
+                
+                
+
+          </div><!-- fin tabpane 2-->
+          <p class="justifier">
+            La complexité temporelle de la recherche dichotomique est  <b> logarithmique</b>.
+          </p>
             </div><!-- fin tabcontent-->
           </div><!-- fin container-->
           
@@ -220,11 +268,24 @@
           <ul> Sur Capytale
           </ul>
 
+
           <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/4fb9-6375507" class="btn-buy">Y aller</a>
+            <a href="https://capytale2.ac-paris.fr/web/c/19df-6375526" class="btn-buy">Y aller</a>
           </div>
         </div>
       </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="zoom-in">
+          <h3>Notebook de révision</h3>
+          <ul> Dichotomie
+          </ul>
+          <div class="btn-wrap">
+            <a href="https://capytale2.ac-paris.fr/web/c/de43-6065537" class="btn-buy">Y aller</a>
+          </div>
+        </div>
+    </div>
+    </div>
+
       <div class="section-title" data-aos="zoom-out">
         <h3 id="pj">Pièces jointes</h3>
 
@@ -241,14 +302,14 @@
             <a target="_blank" href="ressource/TP.zip" class="btn-buy">Télécharger</a>
           </div>
         </div>
-      </div>-->
+      </div>
       <div class="box" data-aos="zoom-in">
         <h3>Le code  </h3>
-        <ul>     </ul>
+        <ul>Pour démarrer        </ul>
         <div class="btn-wrap">
-          <a target="_blank" href="ressources/pokemon-annexe.zip" class="btn-buy">Télécharger</a>
+          <a target="_blank" href="ressource/TPbanque.zip" class="btn-buy">Télécharger</a>
         </div>
-      </div> 
+      </div> -->
     </div>
     </div>
 
