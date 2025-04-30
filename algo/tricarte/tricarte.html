@@ -1,0 +1,132 @@
+  <!DOCTYPE html>
+    <html lang="fr">
+    
+    <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+      <title>Drag and Drop</title>
+    <link rel="stylesheet" href="./css/styles.css">
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+    
+      <!-- Favicons -->
+      <link href="../../assets/img/favicon.png" rel="icon">
+      <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
+      <!-- Google Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    
+      <!-- Vendor CSS Files -->
+      <link href="../../assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+      <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+      <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+      <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+      <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+      <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+      <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+      <!-- Template Main CSS File -->
+      <link href="../../assets/css/style.css" rel="stylesheet">
+      <link href="../../assets/css/stylevirou.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+      <!-- and it's easy to individually load additional languages -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    
+    </head>
+    
+    <body>
+    
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <div class="logo">
+            <!-- <h1><a href="index.html">Nsi</a></h1> -->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <a href="index.html"><img src="../../assets/img/lycee/BandeauENT Laura Compa.jpg" alt="" class="img-fluid"></a> -->
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
+              <li class="dropdown"><a href=""><span>Structures linéaires</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="./consolelinux.html">Console Linux</a></li>
+                  <li><a href="./listechainee.html">Liste chaînée</a></li>
+                  <li><a href="./listechainee.html#exos">Exercices liste chaînée</a></li>
+                  <li><a href="./tdtoutobjet.html">TD tout est objet</a></li>
+                  <li><a href="./processusordonnancement.html">Implémentation des processus   d'ordonnancement</a></li>
+                  <li><a href="./processusordonnancement.html#exos">Exercices pile, file</a></li>
+                  <li><a href="./challenges.html">Challenge</a></li>
+                  <li><a href="./evalstructures.html">Évaluation structures</a></li>
+                  <li><a href="./evalstructuresrattrapage.html">Évaluation rattrapage</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#resume">Résumé du cours</a></li>
+              <li><a class="nav-link scrollto" href="#exos">Exercices</a></li> 
+             <li class="dropdown"><a href="#"><span>Annexes</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#liens">Liens</a></li>
+                  <li><a href="#pj">Pieces Jointes</a></li>
+    
+                </ul>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- End Header -->
+    
+      <!-- ======= Hero Section ======= -->
+    
+      <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+        <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+    
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-container">
+              <h2 class="animate__animated animate__fadeInDown">Trier des cartes</h2>
+              <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
+            </div>
+          </div> <!---->
+    
+    
+      </section> <!-- End Hero -->
+    
+      <main id="main">
+    
+        <section class="inner-page">
+<body>
+    <div class="containercard">
+        <!-- Zone de drag and drop au-dessus de la ligne des cartes -->
+        <div>
+            <label for="drop-zone">Zone de drop (au-dessus)</label>
+            <div class="drop-zone" id="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Drag &amp; Drop ici (au-dessus)</p>
+            </div>
+        </div>
+
+        <!-- Ligne des cartes non triées -->
+        <div class="cards-container" id="initial-cards">
+            <div class="drop-zone" style="width: 200px; height: 300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="drop-zone" style="width: 200px; height: 300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="drop-zone" style="width: 200px; height: 300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="drop-zone" style="width: 200px; height: 300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="drop-zone" style="width: 200px; height: 300px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <button onclick="reshuffleCards()">Remélanger les cartes</button>
+        <button onclick="duplicateRow()">Dupliquer la ligne</button>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

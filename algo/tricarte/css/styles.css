@@ -1,0 +1,48 @@
+.containercard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.drop-zone {
+    width: 200px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 150px;
+}
+img{
+    max-height: 150px;
+}
+.card img {
+    max-width: 150px;
+    max-height: 100%;
+}
+.final-cards-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.final-card {
+    width: 100px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 150px;
+}
