@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gloutons</title>
+  <title>KNN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,9 +56,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Algorithme gloutons</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>KNN</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="./Monnaie.html">Rendue de monnaie</a></li>
+              <li><a href="./ia.html">IA</a></li>
+               <li><a href=".knn.html">KNN</a></li>
+               <li><a href="./implementation.html">Implémentation</a></li>
+             
         
             </ul>
           </li>
@@ -88,7 +91,7 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Rendu de Monnaie</h2>
+          <h2 class="animate__animated animate__fadeInDown">IA</h2>
           <p>Algorithme gloutons</p>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
@@ -135,7 +138,7 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-bars-staggered"></i>
-              <h4 class="d-none d-lg-block">Rendu de monnaie        </h4>
+              <h4 class="d-none d-lg-block">Voyageur de commerce </h4>
             </a>
           </li>
          
@@ -148,22 +151,32 @@
               <div class="col-lg-8 order-1 order-lg-1 mt-3 mt-lg-0">
 
                 <p class="paddingside2">
-                  Le problème du rendu de monnaie est un problème d’optimisation qui consiste à rendre la monnaie avec le moins de pièces possibles.</p>
-                  <p class="paddingside2">
-                  Pour une somme relativement faible, le nombre de combinaisons possibles est très grand. <b>Une solution approchée</b> est souvent un compromis suffisant.</p>
-                  <p class="paddingside2">
-                  <b>L’approche gloutonne</b> consiste à effectuer un choix optimal à chaque étape et ne pas revenir dessus.</p>
-                  <p class="paddingside2">
-                  Par exemple pour le rendu de monnaie, l’approche gloutonne conssiste à rendre la plus grande pièce possible à chaque étape. </p>
+                  Le problème du voyageur de commerce est un problème d’optimisation qui consiste à déterminer le plus court chemin pour visiter toutes les villes une et une seule fois.
 
-                  <div class="box notices cstyle note boxcontentnote">
-                    <div class="box-label boxbglabelnote">
-                      <i class="fa-fw fas fa-exclamation-circle"></i> Remarque
-                    </div>
-                    <div class="box-content ">
-                      <p class="paddingside2">L’approche gloutonne ne donne pas systématiquement la meilleure solution. Cependant la rapidité d’exécution de ce type d’algorithme compense souvent cet inconvénient.</p>
-                    </div>
-                  </div>
+Pour un nombre de villes relativement faible, le nombre d’itinéraires possibles est très grand. <b>Une solution approchée</b> est souvent un compromis suffisant.</p>
+                 <p class="paddingside2">
+                  <b>L’approche gloutonne</b> consiste à choisir systématiquement la ville la plus proche de celle traversée:
+                
+                <ul class="examlisteoutside">
+
+                  <li>Initialiser la distance totale à 0.</li>
+                  <li>Initialiser la ville de départ.</li>
+                  <li>Tant que toutes les villes ne sont pas visitées:
+                    
+                    <ul class="examlisteinside">
+                      <li>Chercher la ville non encore visitée la plus proche de celle en cours.</li>
+                      <li>Ajouter la ville trouvée au parcours.</li>
+                      <li>Mettre à jour la distance totale parcourue</li>
+                    </ul>
+                  </li>
+                  <li>Fermer le parcours en retournant à la ville de départ.</li>
+                </ul>
+                
+                
+                
+                </p>
+         
+             
                   </div>
           </div><!--fin row-->
           
@@ -245,7 +258,7 @@
 
 
           <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/8c9b-6606068" class="btn-buy">Y aller</a>
+            <a href="https://capytale2.ac-paris.fr/web/c/7755-6606027" class="btn-buy">Y aller</a>
           </div>
         </div>
       </div>
@@ -258,7 +271,7 @@
             <a href="https://capytale2.ac-paris.fr/web/c/de43-6065537" class="btn-buy">Y aller</a>
           </div>
         </div>
-      </div> -->
+     </div> -->
     </div>
 
       <div class="section-title" data-aos="zoom-out">
@@ -277,14 +290,14 @@
             <a target="_blank" href="ressource/TP.zip" class="btn-buy">Télécharger</a>
           </div>
         </div>
-      </div>
+      </div>-->
       <div class="box" data-aos="zoom-in">
         <h3>Le code  </h3>
         <ul>Pour démarrer        </ul>
         <div class="btn-wrap">
-          <a target="_blank" href="ressource/TPbanque.zip" class="btn-buy">Télécharger</a>
+          <a target="_blank" href="ressources/distances.zip" class="btn-buy">Télécharger</a>
         </div>
-      </div> -->
+      </div> 
     </div>
     </div>
 

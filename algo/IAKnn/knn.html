@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gloutons</title>
+  <title>KNN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -56,9 +56,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="../../index.html">Accueil</a></li>
-          <li class="dropdown"><a href="#"><span>Algorithme gloutons</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>KNN</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="./Monnaie.html">Rendue de monnaie</a></li>
+              <li><a href="./ia.html">IA</a></li>
+               <li><a href="./knn.html">KNN</a></li>
+               <li><a href="./knn.html#liens">Implémentation</a></li>
+             
         
             </ul>
           </li>
@@ -88,8 +91,8 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Rendu de Monnaie</h2>
-          <p>Algorithme gloutons</p>
+          <h2 class="animate__animated animate__fadeInDown">Algorithme kNN</h2>
+          <p>KNN</p>
           <!-- <a href="#resume" class="btn-get-started animate__animated animate__fadeInUp scrollto">Lire plus</a> -->
         </div>
       </div> <!---->
@@ -135,7 +138,7 @@
           <li class="nav-item col-3" data-aos="zoom-in">
             <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
               <i class="fa-solid fa-bars-staggered"></i>
-              <h4 class="d-none d-lg-block">Rendu de monnaie        </h4>
+              <h4 class="d-none d-lg-block">Algorithme kNN </h4>
             </a>
           </li>
          
@@ -146,24 +149,45 @@
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
               <div class="col-lg-8 order-1 order-lg-1 mt-3 mt-lg-0">
+  <div class="box notices cstyle warning">
+                  <div class="box-label warningbglabel"><i class="fa-fw fas fa-volume-up"></i> À retenir</div>
+                  <div class="box-content">
+                    <p class="paddingside2 justifier">
+                      L’algorithme du plus proche voisin est un algorithme d’apprentissage machine (intelligence artificielle). Il consiste à prédire l’étiquette d’une entité inconnue en la comparant à ses voisins les plus proches.
 
-                <p class="paddingside2">
-                  Le problème du rendu de monnaie est un problème d’optimisation qui consiste à rendre la monnaie avec le moins de pièces possibles.</p>
-                  <p class="paddingside2">
-                  Pour une somme relativement faible, le nombre de combinaisons possibles est très grand. <b>Une solution approchée</b> est souvent un compromis suffisant.</p>
-                  <p class="paddingside2">
-                  <b>L’approche gloutonne</b> consiste à effectuer un choix optimal à chaque étape et ne pas revenir dessus.</p>
-                  <p class="paddingside2">
-                  Par exemple pour le rendu de monnaie, l’approche gloutonne conssiste à rendre la plus grande pièce possible à chaque étape. </p>
-
-                  <div class="box notices cstyle note boxcontentnote">
-                    <div class="box-label boxbglabelnote">
-                      <i class="fa-fw fas fa-exclamation-circle"></i> Remarque
-                    </div>
-                    <div class="box-content ">
-                      <p class="paddingside2">L’approche gloutonne ne donne pas systématiquement la meilleure solution. Cependant la rapidité d’exécution de ce type d’algorithme compense souvent cet inconvénient.</p>
-                    </div>
+                    </p>
                   </div>
+                </div><!-- fin box warning-->
+              
+                <ul class="examlisteoutside">
+
+                  <li>Faire un choix pour k et la distance.</li>
+                  <li><b>Charger les données</b> d’entraînement.</li>
+                  <li><b>Charger les données</b> de test.</li>
+                  <li>Initialiser les réussites à 0.</li>
+                  <li>Pour chaque donnée de test:
+                    
+                    <ul class="examlisteinside">
+                    <li><b>Calculer les distances</b> entre la donnée de test et toutes les données d’entraînement.</li>
+                    <li><b>Trier</b> les distances dans l’ordre croissant.</li>
+                    <li><b>Déterminer le label majoritaire</b> des <b>k</b> plus proches voisins de la donnée de test. </li>
+                    <li>Si le label trouvé correspond à celui du test: </li>
+                      
+                         <li class="paddingside2"> Ajouter 1 aux réussites</li>
+                     
+                   
+                    <li>Calculer le pourcentage de réussite</li>
+                    </ul>
+                    </li>
+                  </li>
+                  
+                </ul>
+                
+                
+                
+                </p>
+         
+             
                   </div>
           </div><!--fin row-->
           
@@ -245,7 +269,19 @@
 
 
           <div class="btn-wrap">
-            <a href="https://capytale2.ac-paris.fr/web/c/8c9b-6606068" class="btn-buy">Y aller</a>
+            <a href="https://capytale2.ac-paris.fr/web/c/7755-6606027" class="btn-buy">Y aller</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="zoom-in">
+          <h3>Le TP</h3>
+          <ul> Sur Capytale
+          </ul>
+
+
+          <div class="btn-wrap">
+            <a href="https://capytale2.ac-paris.fr/web/c/7755-6606027" class="btn-buy">Y aller</a>
           </div>
         </div>
       </div>
@@ -258,7 +294,7 @@
             <a href="https://capytale2.ac-paris.fr/web/c/de43-6065537" class="btn-buy">Y aller</a>
           </div>
         </div>
-      </div> -->
+     </div> -->
     </div>
 
       <div class="section-title" data-aos="zoom-out">
@@ -277,14 +313,14 @@
             <a target="_blank" href="ressource/TP.zip" class="btn-buy">Télécharger</a>
           </div>
         </div>
-      </div>
+      </div>-->
       <div class="box" data-aos="zoom-in">
         <h3>Le code  </h3>
-        <ul>Pour démarrer        </ul>
+        <ul>Pour le TP       </ul>
         <div class="btn-wrap">
-          <a target="_blank" href="ressource/TPbanque.zip" class="btn-buy">Télécharger</a>
+          <a target="_blank" href="ressources/distances.zip" class="btn-buy">Télécharger</a>
         </div>
-      </div> -->
+      </div> 
     </div>
     </div>
 
