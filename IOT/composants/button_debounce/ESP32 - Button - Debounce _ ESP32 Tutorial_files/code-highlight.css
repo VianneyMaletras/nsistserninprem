@@ -1,0 +1,53 @@
+
+.javascript-element { color: #800020; font-weight: bold; }
+.javascript-keyword { color: #0000FF; font-weight: normal; }
+.javascript-string-single-quote { color: #E97451; font-weight: normal; }
+.javascript-string-double-quote { color: #E97451; font-weight: normal; }
+.javascript-comment-line { color: #00bf40; font-weight: normal; }
+.javascript-comment-block { color: #00bf40; font-weight: normal; }
+
+.css-comment { color: #00bf40; font-weight: normal; }
+.css-html-element { color: #FF0000; font-weight: normal; }
+.css-selector { color: #FF0000; font-weight: normal; }
+.css-sign { color: #FF0000; font-weight: normal; }
+.css-property { color: #0000FF; font-weight: normal; }
+.css-value { color: #ff7f50; font-weight: normal; }
+
+.html-attr-key { color: #FF0000; font-weight: normal; }
+.html-attr-value { color: #0000FF; font-weight: normal; }
+.html-tag { color: #950055; font-weight: normal; }
+
+.java-keyword { color: #950055; font-weight: bold; }
+.java-function { color: #0000FF; font-weight: bold; }
+.java-string-single-quote { color: #0000FF; font-weight: normal; }
+.java-string-double-quote { color: #0000FF; font-weight: normal; }
+.java-comment-line { color: #00bf40; font-weight: normal; }
+.java-comment-block { color: #00bf40; font-weight: normal; }
+
+.php-keyword { color: #0000FF; font-weight: bold; }
+.php-variable { color: #C71585; font-weight: bold; }
+.php-function { color: #0000FF; font-weight: bold; }
+.php-string-single-quote { color: #ff9800; font-weight: normal; }
+.php-string-double-quote { color: #ff9800; font-weight: normal; }
+.php-comment-line { color: #00bf40; font-weight: normal; }
+.php-comment-block { color: #00bf40; font-weight: normal; }
+
+.arduino-keyword1 { color: #d35400; font-weight: bold; }
+.arduino-data-type { color: #d35400; font-weight: bold; }
+.arduino-keyword2 { color: #D35400; font-weight: normal; }
+.arduino-function { color: #d35400; font-weight: normal; }
+.arduino-keyword3 { color: #5E6D03; font-weight: normal; }
+.arduino-reserved-word { color: #5E6D03; font-weight: normal; }
+.arduino-literal1 { color: #00979C; font-weight: normal; }
+.arduino-literal2 { color: #00979C; font-weight: normal; }
+.arduino-variable { color: #00979C; font-weight: normal; }
+.arduino-reserved-word-2 { color: #00979C; font-weight: normal; }
+.arduino-literal-boolean { color: #00979C; font-weight: normal; }
+.arduino-string-single-quote { color: #00979C; font-weight: normal; }
+.arduino-string-double-quote { color: #005C5F; font-weight: normal; }
+.arduino-preprocessor { color: #5E6D03; font-weight: normal; }
+.arduino-url { color: #0000ff; font-weight: normal; }
+.arduino-operator { color: #434f54; font-weight: normal; }
+.arduino-label { color: #7e7e7e; font-weight: bold; }
+.arduino-comment-line { color: #434F54; font-weight: normal; }
+.arduino-comment-block { color: #95a5a6; font-weight: normal; }

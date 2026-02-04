@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 154" width="462" height="154">
+	<style>
+		tspan { white-space:pre;font-family: "Poppins", Arial, sans-serif;}
+		.txt0 { font-size: 100px; fill: #ff0000;} 
+		.txt1 { font-size:  67px; fill: #536dfe;} 
+		.shp2 { fill: #ff00ff } 
+	</style>
+	<g id="Layer">
+		<text id="ESP32 I/O " class="txt0" style="transform: matrix(1,0,0,1,-6,73)" >
+			<tspan x="0" y="0">ESP32</tspan> <tspan style="fill:#1CE8B5;">I<tspan style="fill:#F7788A;">/</tspan>O</tspan>
+		</text>
+		<text id="esp32io.com " style="transform: matrix(1,0,0,1,45,140)" >
+			<tspan x="0" y="0" class="txt1">esp32io.com</tspan>
+		</text>
+		<path id="line" class="shp2" d="M0 82L458 82L458 86L0 86L0 82Z" />
+	</g>
+</svg>
